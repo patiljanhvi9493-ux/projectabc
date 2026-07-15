@@ -1,0 +1,779 @@
+[
+  {
+    "id": 1,
+    "title": "Classic Margherita Pizza",
+    "description": "A classic Italian pizza with a crispy thin crust, rich tomato sauce, fresh mozzarella cheese, and aromatic basil leaves.",
+    "image": "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?auto=format&fit=crop&w=800&q=80",
+    "category": "Pizza",
+    "cuisine": "Italian",
+    "mealType": "Dinner",
+    "prepTime": 20,
+    "cookTime": 10,
+    "servings": 4,
+    "calories": 280,
+    "rating": 4.8,
+    "reviewsCount": 124,
+    "difficulty": "Medium",
+    "nutrition": {
+      "protein": 12,
+      "fat": 10,
+      "carbs": 36
+    },
+    "ingredients": [
+      "1 ball pizza dough (store-bought or homemade)",
+      "1/2 cup canned crushed San Marzano tomatoes",
+      "1 cup fresh mozzarella cheese, sliced",
+      "8-10 fresh basil leaves",
+      "1 tbsp extra virgin olive oil",
+      "A pinch of sea salt",
+      "1 tbsp cornmeal (for the pizza peel)"
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Preheat the oven",
+        "description": "Preheat your oven to its highest setting (usually 500°F/260°C) with a pizza stone inside for at least 45 minutes.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 2,
+        "title": "Shape the dough",
+        "description": "On a floured surface, gently stretch the pizza dough into a 12-inch circle. Keep the edges slightly thicker for a nice crust.",
+        "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Add sauce and cheese",
+        "description": "Spread the crushed tomatoes evenly over the dough, leaving a 1/2-inch border. Arrange the fresh mozzarella slices on top.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 4,
+        "title": "Bake the pizza",
+        "description": "Transfer the pizza to the preheated stone. Bake for 8 to 10 minutes, or until the crust is golden brown and cheese is bubbly.",
+        "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 5,
+        "title": "Garnish and serve",
+        "description": "Remove from oven. Immediately top with fresh basil leaves, drizzle with olive oil, and sprinkle with sea salt. Slice and enjoy!",
+        "image": "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&w=400&q=80"
+      }
+    ],
+    "youtubeUrl": "https://www.youtube.com/embed/1-SJGQ2HLp8",
+    "dateAdded": "2026-05-10T10:00:00Z",
+    "popular": true
+  },
+  {
+    "id": 2,
+    "title": "Authentic Shoyu Ramen",
+    "description": "A comforting Japanese noodle soup with a soy sauce-based chicken and dashi broth, tender chashu pork, and soft-boiled ramen egg.",
+    "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80",
+    "category": "Asian",
+    "cuisine": "Chinese",
+    "mealType": "Dinner",
+    "prepTime": 30,
+    "cookTime": 120,
+    "servings": 2,
+    "calories": 650,
+    "rating": 4.9,
+    "reviewsCount": 86,
+    "difficulty": "Hard",
+    "nutrition": {
+      "protein": 34,
+      "fat": 22,
+      "carbs": 78
+    },
+    "ingredients": [
+      "2 portions fresh ramen noodles",
+      "4 cups high-quality chicken broth",
+      "1 sheet kombu (kelp) for dashi",
+      "1/4 cup soy sauce",
+      "2 tbsp mirin",
+      "4 slices chashu pork (braised pork belly)",
+      "1 marinated soft-boiled egg, halved",
+      "1/2 cup green onions, finely chopped",
+      "Nori sheets and bamboo shoots (menma) for topping"
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Prepare the broth",
+        "description": "Simmer chicken broth with kombu, ginger, and garlic on low heat for 1.5 hours. Discard kombu after 30 minutes to prevent bitterness.",
+        "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 2,
+        "title": "Make the Shoyu Tare",
+        "description": "In a small saucepan, combine soy sauce, mirin, a splash of sake, and a pinch of sugar. Simmer for 5 minutes and set aside.",
+        "image": "https://images.unsplash.com/photo-1581622558663-b2e33377dfb2?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Boil noodles and warm toppings",
+        "description": "Bring a large pot of water to a boil. Cook fresh ramen noodles for 2 minutes. Warm your chashu pork slices in a hot pan.",
+        "image": "https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 4,
+        "title": "Assemble the bowls",
+        "description": "Place 2 tablespoons of tare in each bowl. Pour in 2 cups of hot broth and stir. Add cooked noodles, folding them neatly.",
+        "image": "https://images.unsplash.com/photo-1557872943-16a5ac26437e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 5,
+        "title": "Add toppings and serve",
+        "description": "Top with pork slices, half a soft-boiled egg, bamboo shoots, nori sheet, and a generous handful of green onions. Serve hot.",
+        "image": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=400&q=80"
+      }
+    ],
+    "youtubeUrl": "https://www.youtube.com/embed/WJ69S0t7Ego",
+    "dateAdded": "2026-06-01T11:30:00Z",
+    "popular": true
+  },
+  {
+    "id": 3,
+    "title": "Gourmet Caesar Salad",
+    "description": "Crisp romaine lettuce tossed in a creamy, homemade Caesar dressing, topped with garlic-herb croutons and freshly shaved Parmesan.",
+    "image": "https://images.unsplash.com/photo-1550304943-4f24f54ddde9?auto=format&fit=crop&w=800&q=80",
+    "category": "Salad",
+    "cuisine": "Italian",
+    "mealType": "Lunch",
+    "prepTime": 15,
+    "cookTime": 5,
+    "servings": 2,
+    "calories": 320,
+    "rating": 4.6,
+    "reviewsCount": 42,
+    "difficulty": "Easy",
+    "nutrition": {
+      "protein": 10,
+      "fat": 26,
+      "carbs": 12
+    },
+    "ingredients": [
+      "1 large head romaine lettuce, washed and chopped",
+      "1/2 cup fresh croutons",
+      "1/3 cup grated Parmesan cheese",
+      "2 garlic cloves, minced",
+      "2 anchovy fillets (optional, or 1 tsp Worcestershire sauce)",
+      "1 egg yolk",
+      "2 tbsp fresh lemon juice",
+      "1/2 cup extra virgin olive oil",
+      "Salt and freshly cracked black pepper"
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Bake the croutons",
+        "description": "Toss bread cubes with olive oil, salt, and garlic powder. Bake at 375°F (190°C) for 10 minutes until golden and crunchy.",
+        "image": "https://images.unsplash.com/photo-1608039829572-78524f79c4c7?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 2,
+        "title": "Make the dressing",
+        "description": "Whisk egg yolk, minced garlic, lemon juice, anchovy paste, and Worcestershire sauce in a bowl. Slowly drizzle olive oil while whisking vigorously.",
+        "image": "https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Toss the greens",
+        "description": "Place dried, chopped romaine lettuce in a large wooden bowl. Drizzle half the dressing over the top and toss to coat evenly.",
+        "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 4,
+        "title": "Assemble and garnish",
+        "description": "Add croutons, grated Parmesan, and remaining dressing. Toss gently. Top with shaved Parmesan curls and fresh cracked black pepper.",
+        "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=400&q=80"
+      }
+    ],
+    "youtubeUrl": "https://www.youtube.com/embed/5aT2uA9D_iE",
+    "dateAdded": "2026-04-18T08:15:00Z",
+    "popular": false
+  },
+  {
+    "id": 4,
+    "title": "Decadent Chocolate Lava Cake",
+    "description": "A rich chocolate cake with a warm, molten chocolate center. A showstopping dessert that is deceptively easy to make.",
+    "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80",
+    "category": "Dessert",
+    "cuisine": "French",
+    "mealType": "Dessert",
+    "prepTime": 15,
+    "cookTime": 13,
+    "servings": 2,
+    "calories": 480,
+    "rating": 4.9,
+    "reviewsCount": 210,
+    "difficulty": "Medium",
+    "nutrition": {
+      "protein": 6,
+      "fat": 32,
+      "carbs": 44
+    },
+    "ingredients": [
+      "4 oz high-quality semi-sweet chocolate, chopped",
+      "1/2 cup unsalted butter",
+      "2 whole eggs plus 2 egg yolks",
+      "1/4 cup white sugar",
+      "A pinch of salt",
+      "2 tbsp all-purpose flour",
+      "Cocoa powder (for dusting ramekins)",
+      "Powdered sugar and fresh raspberries (optional, for serving)"
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Prep ramekins and oven",
+        "description": "Preheat oven to 425°F (218°C). Butter two 6-ounce ramekins generously and dust with cocoa powder, tapping out the excess.",
+        "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 2,
+        "title": "Melt chocolate and butter",
+        "description": "Microwave chocolate and butter in a microwave-safe bowl in 30-second increments until melted. Stir until completely smooth.",
+        "image": "https://images.unsplash.com/photo-1604152135912-04a022e23696?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Whip eggs and sugar",
+        "description": "Using an electric mixer, beat the eggs, egg yolks, sugar, and salt together at high speed until pale, thick, and doubled in volume.",
+        "image": "https://images.unsplash.com/photo-1590157143268-9c7efbfbf73d?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 4,
+        "title": "Combine ingredients",
+        "description": "Gently fold the melted chocolate mixture and flour into the whipped eggs using a rubber spatula until just combined. Do not overmix.",
+        "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 5,
+        "title": "Bake and invert",
+        "description": "Divide batter between ramekins. Bake for 12-14 minutes until edges are firm but center is soft. Cool for 1 minute, invert onto plates, dust with powdered sugar.",
+        "image": "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=400&q=80"
+      }
+    ],
+    "youtubeUrl": "https://www.youtube.com/embed/nryp5-P1b-g",
+    "dateAdded": "2026-06-15T15:20:00Z",
+    "popular": true
+  },
+  {
+    "id": 5,
+    "title": "Double Smash Cheeseburger",
+    "description": "Crispy-edged beef patties, melted American cheese, caramelized onions, and secret burger sauce on a toasted brioche bun.",
+    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80",
+    "category": "Burgers",
+    "cuisine": "American",
+    "mealType": "Lunch",
+    "prepTime": 15,
+    "cookTime": 10,
+    "servings": 1,
+    "calories": 780,
+    "rating": 4.7,
+    "reviewsCount": 164,
+    "difficulty": "Easy",
+    "nutrition": {
+      "protein": 42,
+      "fat": 48,
+      "carbs": 38
+    },
+    "ingredients": [
+      "1/2 lb ground beef (80/20 blend, divided into two balls)",
+      "2 slices American cheese",
+      "1 brioche burger bun, split",
+      "1/2 small onion, thinly sliced",
+      "1 tbsp butter",
+      "1 tbsp mayonnaise",
+      "1 tsp yellow mustard",
+      "1 tsp sweet pickle relish",
+      "Salt and pepper"
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Toast the bun and prep sauce",
+        "description": "Spread butter on the buns and toast them in a hot skillet until golden. Mix mayo, mustard, relish, and a dash of pepper in a bowl to make the sauce.",
+        "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 2,
+        "title": "Sear the onions",
+        "description": "Place sliced onions in the hot cast iron skillet. Place beef balls directly on top of the onions.",
+        "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Smash the patties",
+        "description": "Using a heavy spatula or burger press, smash the patties down as flat as possible. Season generously with salt and pepper. Cook for 2 minutes.",
+        "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 4,
+        "title": "Flip and add cheese",
+        "description": "Scrape underneath the patties and flip them over. Immediately place a slice of American cheese on each patty. Cook for 1 minute until cheese melts.",
+        "image": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 5,
+        "title": "Assemble the burger",
+        "description": "Spread sauce on the bottom bun. Stack the two cheesy patties on top of each other. Cover with the top bun and serve immediately.",
+        "image": "https://images.unsplash.com/photo-1460306855393-0410f61241c7?auto=format&fit=crop&w=400&q=80"
+      }
+    ],
+    "youtubeUrl": "https://www.youtube.com/embed/n4p3vJ-zZ04",
+    "dateAdded": "2026-07-02T12:00:00Z",
+    "popular": true
+  },
+  {
+    "id": 6,
+    "title": "Classic Chicken Tikka Masala",
+    "description": "Tender pieces of marinated chicken grilled to perfection and then simmered in a rich, creamy, spiced tomato curry sauce.",
+    "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80",
+    "category": "Indian",
+    "cuisine": "Indian",
+    "mealType": "Dinner",
+    "prepTime": 25,
+    "cookTime": 35,
+    "servings": 4,
+    "calories": 480,
+    "rating": 4.9,
+    "reviewsCount": 298,
+    "difficulty": "Medium",
+    "nutrition": {
+      "protein": 38,
+      "fat": 24,
+      "carbs": 18
+    },
+    "ingredients": [
+      "1.5 lbs chicken breasts, cut into bite-sized pieces",
+      "1 cup plain yogurt",
+      "2 tbsp lemon juice",
+      "2 tbsp garlic-ginger paste",
+      "2 tbsp garam masala",
+      "1 tbsp ground cumin",
+      "1 tbsp turmeric",
+      "2 tbsp butter",
+      "1 large onion, finely chopped",
+      "1 can (14 oz) tomato puree",
+      "1 cup heavy cream",
+      "Fresh cilantro for garnish"
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Marinate the chicken",
+        "description": "Combine yogurt, lemon juice, half the garlic-ginger paste, garam masala, cumin, and turmeric in a bowl. Add chicken and marinate for 1 hour.",
+        "image": "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 2,
+        "title": "Sear the chicken",
+        "description": "Heat a large skillet or grill pan. Sear chicken pieces in batches until browned on all sides. They do not need to be cooked all the way through.",
+        "image": "https://images.unsplash.com/photo-1604503468506-a8da13d82791?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Build the sauce",
+        "description": "Melt butter in a pan. Sauté chopped onions, remaining garlic-ginger paste, and a dash of spices for 5 minutes. Pour in tomato puree and simmer.",
+        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 4,
+        "title": "Simmer chicken in sauce",
+        "description": "Add the seared chicken pieces into the simmering tomato sauce. Cook on low heat for 15 minutes until chicken is tender and cooked through.",
+        "image": "https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 5,
+        "title": "Add cream and garnish",
+        "description": "Stir in the heavy cream and let simmer for another 2 minutes. Garnish with chopped fresh cilantro and serve with garlic naan.",
+        "image": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=400&q=80"
+      }
+    ],
+    "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
+    "dateAdded": "2026-05-24T18:45:00Z",
+    "popular": true
+  },
+  {
+    "id": 7,
+    "title": "Fluffy Buttermilk Pancakes",
+    "description": "Light, fluffy, and golden-brown buttermilk pancakes. Perfect for a weekend family brunch served with butter and pure maple syrup.",
+    "image": "https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=800&q=80",
+    "category": "Breakfast",
+    "cuisine": "American",
+    "mealType": "Breakfast",
+    "prepTime": 10,
+    "cookTime": 15,
+    "servings": 3,
+    "calories": 350,
+    "rating": 4.7,
+    "reviewsCount": 182,
+    "difficulty": "Easy",
+    "nutrition": {
+      "protein": 8,
+      "fat": 12,
+      "carbs": 52
+    },
+    "ingredients": [
+      "2 cups all-purpose flour",
+      "2 tbsp sugar",
+      "2 tsp baking powder",
+      "1 tsp baking soda",
+      "1/2 tsp salt",
+      "2 cups buttermilk",
+      "2 large eggs",
+      "4 tbsp unsalted butter, melted",
+      "1 tsp vanilla extract",
+      "Butter and maple syrup for serving"
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Mix dry ingredients",
+        "description": "In a large bowl, whisk together the flour, sugar, baking powder, baking soda, and salt.",
+        "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 2,
+        "title": "Whisk wet ingredients",
+        "description": "In another bowl, whisk together the buttermilk, eggs, melted butter, and vanilla extract.",
+        "image": "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Combine dry and wet",
+        "description": "Pour wet ingredients into the dry ingredients. Stir with a spatula until just combined. The batter should be thick and lumpy.",
+        "image": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 4,
+        "title": "Cook on griddle",
+        "description": "Heat a non-stick griddle over medium heat and grease with butter. Pour 1/3 cup of batter for each pancake. Cook until bubbles form on top.",
+        "image": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 5,
+        "title": "Flip and finish",
+        "description": "Flip the pancakes and cook for another 1-2 minutes until golden brown on the other side. Serve immediately with syrup.",
+        "image": "https://images.unsplash.com/photo-1504544048408-570c98ea3148?auto=format&fit=crop&w=400&q=80"
+      }
+    ],
+    "youtubeUrl": "https://www.youtube.com/embed/n4a6p2b_y60",
+    "dateAdded": "2026-07-10T07:30:00Z",
+    "popular": false
+  },
+  {
+    "id": 8,
+    "title": "Fresh Strawberry Mojito",
+    "description": "A refreshing summer drink featuring muddled fresh strawberries, mint leaves, lime juice, rum, and fizzy soda water.",
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80",
+    "category": "Drinks",
+    "cuisine": "Cuban",
+    "mealType": "Drinks",
+    "prepTime": 5,
+    "cookTime": 0,
+    "servings": 1,
+    "calories": 160,
+    "rating": 4.5,
+    "reviewsCount": 28,
+    "difficulty": "Easy",
+    "nutrition": {
+      "protein": 1,
+      "fat": 0,
+      "carbs": 18
+    },
+    "ingredients": [
+      "4 fresh strawberries, sliced",
+      "8 fresh mint leaves",
+      "1/2 lime, cut into wedges",
+      "1 tbsp sugar",
+      "2 oz white rum",
+      "1 cup ice cubes",
+      "Club soda to top",
+      "Extra mint and strawberry for garnish"
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Muddle fruit and herbs",
+        "description": "In a tall glass, combine strawberries, mint leaves, lime wedges, and sugar. Use a muddler to gently press and release juices.",
+        "image": "https://images.unsplash.com/photo-1549468057-5b7fa1a41d7a?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 2,
+        "title": "Add rum and ice",
+        "description": "Pour in white rum and fill the glass with crushed or cubed ice.",
+        "image": "https://images.unsplash.com/photo-1597481499750-3e6b22637e12?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Top with soda and stir",
+        "description": "Top with club soda. Stir well from the bottom up to distribute the fruit flavors. Garnish with a mint sprig and serve.",
+        "image": "https://images.unsplash.com/photo-1536935338788-846bb9981813?auto=format&fit=crop&w=400&q=80"
+      }
+    ],
+    "youtubeUrl": "https://www.youtube.com/embed/n4p3vJ-zZ04",
+    "dateAdded": "2026-07-12T16:00:00Z",
+    "popular": false
+  },
+  {
+    "id": 9,
+    "title": "Tacos Al Pastor",
+    "description": "Stunning Mexican street tacos with thin slices of marinated spit-roasted pork, grilled pineapple, cilantro, and onions on warm corn tortillas.",
+    "image": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=800&q=80",
+    "category": "Mexican",
+    "cuisine": "Mexican",
+    "mealType": "Dinner",
+    "prepTime": 30,
+    "cookTime": 25,
+    "servings": 4,
+    "calories": 420,
+    "rating": 4.9,
+    "reviewsCount": 112,
+    "difficulty": "Hard",
+    "nutrition": {
+      "protein": 28,
+      "fat": 18,
+      "carbs": 34
+    },
+    "ingredients": [
+      "2 lbs pork shoulder, sliced thin",
+      "3 achiote paste blocks",
+      "2 chipotle peppers in adobo sauce",
+      "1/2 cup pineapple juice",
+      "1/4 cup white vinegar",
+      "3 garlic cloves",
+      "12 corn tortillas",
+      "1 cup fresh pineapple, diced",
+      "1/2 cup white onion, finely diced",
+      "1/2 cup fresh cilantro, chopped",
+      "Lime wedges for serving"
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Blend the marinade",
+        "description": "Blend achiote paste, chipotles, pineapple juice, vinegar, garlic, oregano, cumin, and salt until smooth. Pour over pork and marinate for 4 hours.",
+        "image": "https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 2,
+        "title": "Cook the pork",
+        "description": "Grill or pan-fry marinated pork slices in a hot skillet with a little oil until nicely charred and fully cooked. Chop into small pieces.",
+        "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Grill pineapple and toast tortillas",
+        "description": "Grill pineapple slices until caramelized, then chop. Warm corn tortillas on a dry skillet until soft and pliable.",
+        "image": "https://images.unsplash.com/photo-1550258987-190a2d41a8ba?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 4,
+        "title": "Assemble tacos",
+        "description": "Double stack two tortillas. Fill with pork, top with grilled pineapple, onions, and fresh cilantro. Serve with lime wedges.",
+        "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=400&q=80"
+      }
+    ],
+    "youtubeUrl": "https://www.youtube.com/embed/n4p3vJ-zZ04",
+    "dateAdded": "2026-06-20T19:30:00Z",
+    "popular": true
+  },
+  {
+    "id": 10,
+    "title": "Healthy Avocado Toast",
+    "description": "Creamy mashed avocado on toasted artisanal sourdough bread, topped with a soft-poached egg, chili flakes, and microgreens.",
+    "image": "https://images.unsplash.com/photo-1541532713592-79a0317b6b77?auto=format&fit=crop&w=800&q=80",
+    "category": "Breakfast",
+    "cuisine": "American",
+    "mealType": "Breakfast",
+    "prepTime": 10,
+    "cookTime": 5,
+    "servings": 1,
+    "calories": 290,
+    "rating": 4.6,
+    "reviewsCount": 78,
+    "difficulty": "Easy",
+    "nutrition": {
+      "protein": 11,
+      "fat": 17,
+      "carbs": 26
+    },
+    "ingredients": [
+      "1 thick slice sourdough bread",
+      "1 ripe Haas avocado",
+      "1 fresh egg",
+      "1 tsp lemon juice",
+      "1/2 tsp red chili flakes",
+      "Sea salt and freshly cracked black pepper",
+      "1 tsp olive oil",
+      "Microgreens or sprouts for garnish"
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Toast the sourdough",
+        "description": "Drizzle sourdough bread with a little olive oil and toast on a grill pan until crispy and marked.",
+        "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 2,
+        "title": "Mash the avocado",
+        "description": "Mash avocado flesh with lemon juice, salt, and pepper in a bowl. Keep it slightly chunky.",
+        "image": "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Poach the egg",
+        "description": "Bring water to a simmer with a splash of vinegar. Whirl the water to create a vortex, slip in the cracked egg, and cook for 3 minutes.",
+        "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 4,
+        "title": "Assemble and serve",
+        "description": "Spread mashed avocado onto the toast. Slide the poached egg on top. Garnish with red pepper flakes, black pepper, and microgreens.",
+        "image": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=400&q=80"
+      }
+    ],
+    "youtubeUrl": "https://www.youtube.com/embed/n4p3vJ-zZ04",
+    "dateAdded": "2026-07-05T09:00:00Z",
+    "popular": false
+  },
+  {
+    "id": 11,
+    "title": "Classic Pad Thai",
+    "description": "The quintessential Thai street food noodle dish: rice noodles stir-fried with tofu, eggs, bean sprouts, and peanuts in a tangy tamarind sauce.",
+    "image": "https://images.unsplash.com/photo-1559314809-0d155014e29e?auto=format&fit=crop&w=800&q=80",
+    "category": "Asian",
+    "cuisine": "Chinese",
+    "mealType": "Lunch",
+    "prepTime": 20,
+    "cookTime": 10,
+    "servings": 2,
+    "calories": 580,
+    "rating": 4.8,
+    "reviewsCount": 142,
+    "difficulty": "Medium",
+    "nutrition": {
+      "protein": 18,
+      "fat": 16,
+      "carbs": 92
+    },
+    "ingredients": [
+      "4 oz flat rice noodles",
+      "2 tbsp tamarind paste",
+      "2 tbsp palm sugar",
+      "2 tbsp fish sauce (or soy sauce)",
+      "3 tbsp vegetable oil",
+      "1/2 cup firm tofu, cubed",
+      "2 eggs, lightly beaten",
+      "1/2 cup fresh bean sprouts",
+      "1/4 cup roasted peanuts, crushed",
+      "2 green onions, sliced",
+      "Lime wedges and red pepper flakes"
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Soak noodles and prep sauce",
+        "description": "Soak rice noodles in warm water for 30 minutes until soft. Whisk tamarind paste, palm sugar, and fish sauce with hot water to dissolve sugar.",
+        "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 2,
+        "title": "Fry tofu and aromatics",
+        "description": "Heat oil in a wok. Fry tofu cubes until golden. Add minced garlic and shallots, cooking for 30 seconds.",
+        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Scramble the eggs",
+        "description": "Push tofu to the side of the wok. Pour in eggs and scramble until set, then mix with tofu.",
+        "image": "https://images.unsplash.com/photo-1598965402089-897ce52e8355?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 4,
+        "title": "Toss noodles and sauce",
+        "description": "Add drained noodles and tamarind sauce. Stir-fry rapidly, tossing continuously, until noodles absorb sauce and become tender.",
+        "image": "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 5,
+        "title": "Add final garnishes",
+        "description": "Toss in bean sprouts, green onions, and half the crushed peanuts. Serve with lime wedges, remaining peanuts, and red pepper flakes.",
+        "image": "https://images.unsplash.com/photo-1626804475315-9644b37a2fe4?auto=format&fit=crop&w=400&q=80"
+      }
+    ],
+    "youtubeUrl": "https://www.youtube.com/embed/n4p3vJ-zZ04",
+    "dateAdded": "2026-06-25T13:00:00Z",
+    "popular": false
+  },
+  {
+    "id": 12,
+    "title": "Vegetable Dum Biryani",
+    "description": "Fragrant basmati rice layered with spiced vegetables, caramelized onions, fresh herbs, and saffron milk, slow-cooked to perfection.",
+    "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80",
+    "category": "Indian",
+    "cuisine": "Indian",
+    "mealType": "Dinner",
+    "prepTime": 30,
+    "cookTime": 45,
+    "servings": 6,
+    "calories": 410,
+    "rating": 4.8,
+    "reviewsCount": 156,
+    "difficulty": "Hard",
+    "nutrition": {
+      "protein": 10,
+      "fat": 12,
+      "carbs": 68
+    },
+    "ingredients": [
+      "2 cups premium Basmati rice",
+      "2 cups mixed vegetables (carrots, peas, potatoes, beans)",
+      "1 cup plain yogurt",
+      "2 large onions, thinly sliced and fried until crispy",
+      "1/2 cup fresh mint and cilantro, chopped",
+      "1/2 tsp saffron threads dissolved in 2 tbsp warm milk",
+      "3 tbsp ghee",
+      "Whole spices (cardamom, cloves, cinnamon, bay leaf)",
+      "1 tbsp biryani masala powder"
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "title": "Parboil the rice",
+        "description": "Wash and soak Basmati rice for 30 minutes. Boil in salted water with whole spices until 70% cooked. Drain and set aside.",
+        "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 2,
+        "title": "Marinate the vegetables",
+        "description": "Mix chopped vegetables with yogurt, biryani masala, half the fried onions, mint, cilantro, oil, and salt. Let sit for 20 minutes.",
+        "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Cook vegetable layer",
+        "description": "Heat ghee in a heavy-bottomed pot. Add marinated vegetables and cook for 10 minutes until par-cooked.",
+        "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 4,
+        "title": "Layer and Dum",
+        "description": "Layer parboiled rice over the cooked vegetables. Sprinkle saffron milk, remaining fried onions, ghee, mint, and cilantro. Seal pot with dough or foil.",
+        "image": "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 5,
+        "title": "Slow cook and fluff",
+        "description": "Cook on very low heat (dum) for 25-30 minutes. Let rest for 10 minutes, then gently fluff layers and serve warm with raita.",
+        "image": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=400&q=80"
+      }
+    ],
+    "youtubeUrl": "https://www.youtube.com/embed/WJ69S0t7Ego",
+    "dateAdded": "2026-06-10T14:00:00Z",
+    "popular": true
+  }
+]

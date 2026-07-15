@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover delicious recipes from around the world with FlavorBook. Browse categories, save your favorites, and cook like a professional chef.">
+  <title>FlavorBook – Discover Delicious Recipes</title>
+  
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/dark.css">
+</head>
+<body style="overflow-y: hidden;">
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loader-container">
+      <div class="pot-wrapper">
+        <div class="steam-container">
+          <div class="steam"></div>
+          <div class="steam"></div>
+          <div class="steam"></div>
+        </div>
+        <div class="pot-lid"></div>
+        <div class="pot-handle left"></div>
+        <div class="pot-handle right"></div>
+        <div class="pot"></div>
+      </div>
+      <div class="loading-percentage">0%</div>
+      <div class="loading-progress">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo">🍳 Flavor<span>Book</span></a>
+      
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="recipes.html" class="nav-link">Recipes</a></li>
+        <li><a href="categories.html" class="nav-link">Categories</a></li>
+        <li><a href="favorites.html" class="nav-link">Favorites</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="login.html" class="nav-link">Login</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="search-trigger" id="open-search" aria-label="Open Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="theme-toggle" aria-label="Toggle Dark Mode"><i class="fa-solid fa-moon"></i></button>
+        <button class="hamburger" aria-label="Open Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Global Search Overlay -->
+  <div class="search-overlay">
+    <button class="search-close" aria-label="Close Search">&times;</button>
+    <div class="search-box">
+      <input type="text" id="global-search-input" placeholder="Search recipes, ingredients, cuisines...">
+      <button id="global-search-btn" aria-label="Submit Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <div id="search-suggestions" style="display: none; background-color: var(--card-bg); border-radius: 12px; margin-top: 10px; box-shadow: var(--shadow-lg); overflow: hidden;"></div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="section hero-section" style="padding-top: 140px; background: radial-gradient(circle at top right, rgba(255, 209, 102, 0.15), transparent 60%);">
+    <div class="container hero-container" style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 60px; align-items: center; position: relative;">
+      
+      <!-- Floating Vegetables -->
+      <div class="hero-floating-veg" style="position: absolute; width: 100%; height: 100%; z-index: -1; pointer-events: none;">
+        <i class="fa-solid fa-carrot float-item-1" style="position: absolute; top: 10%; left: 0; font-size: 2.5rem; color: #ff7f50; opacity: 0.25;"></i>
+        <i class="fa-solid fa-pepper-hot float-item-2" style="position: absolute; bottom: 20%; left: 10%; font-size: 2.2rem; color: #ff4757; opacity: 0.25;"></i>
+        <i class="fa-solid fa-lemon float-item-3" style="position: absolute; top: 5%; right: 40%; font-size: 2.8rem; color: #fed330; opacity: 0.25;"></i>
+        <i class="fa-solid fa-seedling float-item-1" style="position: absolute; bottom: 10%; right: 20%; font-size: 2.6rem; color: #2bcbba; opacity: 0.25;"></i>
+      </div>
+
+      <div class="hero-text reveal-fade-up">
+        <h1 style="font-size: 3.5rem; font-weight: 800; margin-bottom: 24px; color: var(--dark-color); line-height: 1.1;">
+          Discover <span style="color: var(--primary-color);">Delicious</span> Recipes From Around The World
+        </h1>
+        <p style="font-size: 1.1rem; color: var(--text-light); margin-bottom: 35px; max-width: 500px;">
+          FlavorBook is your ultimate kitchen helper. Browse hundreds of high-quality recipe guides, save your favorites, and prepare restaurant-grade meals.
+        </p>
+        <div class="hero-buttons" style="display: flex; gap: 20px;">
+          <a href="recipes.html" class="btn btn-primary pulse-btn">Explore Recipes <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="recipe.html?id=1" class="btn btn-secondary"><i class="fa-solid fa-play"></i> Watch Video</a>
+        </div>
+      </div>
+
+      <div class="hero-image-container reveal-fade-up" data-delay="200" style="position: relative;">
+        <div class="image-bg-blob" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)); filter: blur(40px); opacity: 0.15; border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; z-index: -1;"></div>
+        <img src="https://images.unsplash.com/photo-1543353071-10c8ba85a904?auto=format&fit=crop&w=800&q=80" alt="Delicious Healthy Bowl" style="width: 100%; border-radius: 50% 20% 50% 30%; box-shadow: var(--shadow-lg); border: 8px solid white;">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Categories Grid Section -->
+  <section class="section categories-section" style="background-color: var(--card-bg); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-title-wrapper reveal-fade-up">
+        <span class="section-subtitle">What's your craving?</span>
+        <h2 class="section-title">Browse By Category</h2>
+      </div>
+
+      <div class="categories-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px;">
+        <!-- Pizza -->
+        <a href="recipes.html?category=Pizza" class="category-badge reveal-fade-up" data-delay="50" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; background-color: var(--bg-color); border-radius: 20px; text-align: center; border: 1px solid var(--border-color); transition: transform 0.3s ease, border-color 0.3s ease;">
+          <span style="font-size: 2.5rem; margin-bottom: 12px;">🍕</span>
+          <h3 style="font-size: 1.05rem;">Pizza</h3>
+        </a>
+        <!-- Asian -->
+        <a href="recipes.html?category=Asian" class="category-badge reveal-fade-up" data-delay="100" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; background-color: var(--bg-color); border-radius: 20px; text-align: center; border: 1px solid var(--border-color); transition: transform 0.3s ease, border-color 0.3s ease;">
+          <span style="font-size: 2.5rem; margin-bottom: 12px;">🍜</span>
+          <h3 style="font-size: 1.05rem;">Asian</h3>
+        </a>
+        <!-- Salad -->
+        <a href="recipes.html?category=Salad" class="category-badge reveal-fade-up" data-delay="150" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; background-color: var(--bg-color); border-radius: 20px; text-align: center; border: 1px solid var(--border-color); transition: transform 0.3s ease, border-color 0.3s ease;">
+          <span style="font-size: 2.5rem; margin-bottom: 12px;">🥗</span>
+          <h3 style="font-size: 1.05rem;">Salad</h3>
+        </a>
+        <!-- Dessert -->
+        <a href="recipes.html?category=Dessert" class="category-badge reveal-fade-up" data-delay="200" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; background-color: var(--bg-color); border-radius: 20px; text-align: center; border: 1px solid var(--border-color); transition: transform 0.3s ease, border-color 0.3s ease;">
+          <span style="font-size: 2.5rem; margin-bottom: 12px;">🍰</span>
+          <h3 style="font-size: 1.05rem;">Dessert</h3>
+        </a>
+        <!-- Burgers -->
+        <a href="recipes.html?category=Burgers" class="category-badge reveal-fade-up" data-delay="250" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; background-color: var(--bg-color); border-radius: 20px; text-align: center; border: 1px solid var(--border-color); transition: transform 0.3s ease, border-color 0.3s ease;">
+          <span style="font-size: 2.5rem; margin-bottom: 12px;">🍔</span>
+          <h3 style="font-size: 1.05rem;">Burgers</h3>
+        </a>
+        <!-- Indian -->
+        <a href="recipes.html?category=Indian" class="category-badge reveal-fade-up" data-delay="300" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; background-color: var(--bg-color); border-radius: 20px; text-align: center; border: 1px solid var(--border-color); transition: transform 0.3s ease, border-color 0.3s ease;">
+          <span style="font-size: 2.5rem; margin-bottom: 12px;">🥘</span>
+          <h3 style="font-size: 1.05rem;">Indian</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Recipes Grid (6 cards) -->
+  <section class="section featured-section">
+    <div class="container">
+      <div class="section-title-wrapper reveal-fade-up">
+        <span class="section-subtitle">Chef's Selection</span>
+        <h2 class="section-title">Featured Recipes</h2>
+      </div>
+
+      <div class="recipes-grid">
+        <!-- Card 1 -->
+        <div class="recipe-card reveal-fade-up" data-delay="50">
+          <div class="card-img-wrapper">
+            <span class="card-tag">Pizza</span>
+            <button class="card-fav-btn" data-id="1" data-title="Classic Margherita Pizza">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?auto=format&fit=crop&w=800&q=80" alt="Margherita Pizza">
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="card-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+              <span class="card-difficulty">Medium</span>
+            </div>
+            <h3 class="card-title"><a href="recipe.html?id=1">Classic Margherita Pizza</a></h3>
+            <p class="card-desc">A classic Italian pizza with a crispy thin crust, rich tomato sauce, fresh mozzarella cheese, and aromatic basil leaves.</p>
+            <div class="card-footer">
+              <span><i class="fa-regular fa-clock"></i> 30 Min</span>
+              <span><i class="fa-solid fa-fire"></i> 280 kcal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="recipe-card reveal-fade-up" data-delay="100">
+          <div class="card-img-wrapper">
+            <span class="card-tag">Asian</span>
+            <button class="card-fav-btn" data-id="2" data-title="Authentic Shoyu Ramen">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80" alt="Shoyu Ramen">
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="card-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+              <span class="card-difficulty">Hard</span>
+            </div>
+            <h3 class="card-title"><a href="recipe.html?id=2">Authentic Shoyu Ramen</a></h3>
+            <p class="card-desc">A comforting Japanese noodle soup with a soy sauce-based chicken and dashi broth, tender chashu pork, and soft-boiled egg.</p>
+            <div class="card-footer">
+              <span><i class="fa-regular fa-clock"></i> 150 Min</span>
+              <span><i class="fa-solid fa-fire"></i> 650 kcal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="recipe-card reveal-fade-up" data-delay="150">
+          <div class="card-img-wrapper">
+            <span class="card-tag">Salad</span>
+            <button class="card-fav-btn" data-id="3" data-title="Gourmet Caesar Salad">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="https://images.unsplash.com/photo-1550304943-4f24f54ddde9?auto=format&fit=crop&w=800&q=80" alt="Caesar Salad">
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="card-rating"><i class="fa-solid fa-star"></i> 4.6</span>
+              <span class="card-difficulty">Easy</span>
+            </div>
+            <h3 class="card-title"><a href="recipe.html?id=3">Gourmet Caesar Salad</a></h3>
+            <p class="card-desc">Crisp romaine lettuce tossed in a creamy, homemade Caesar dressing, topped with garlic croutons and grated Parmesan.</p>
+            <div class="card-footer">
+              <span><i class="fa-regular fa-clock"></i> 20 Min</span>
+              <span><i class="fa-solid fa-fire"></i> 320 kcal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="recipe-card reveal-fade-up" data-delay="200">
+          <div class="card-img-wrapper">
+            <span class="card-tag">Dessert</span>
+            <button class="card-fav-btn" data-id="4" data-title="Decadent Chocolate Lava Cake">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80" alt="Chocolate Lava Cake">
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="card-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+              <span class="card-difficulty">Medium</span>
+            </div>
+            <h3 class="card-title"><a href="recipe.html?id=4">Decadent Chocolate Lava Cake</a></h3>
+            <p class="card-desc">A rich chocolate cake with a warm, molten chocolate center. A showstopping dessert that is deceptively easy to make.</p>
+            <div class="card-footer">
+              <span><i class="fa-regular fa-clock"></i> 28 Min</span>
+              <span><i class="fa-solid fa-fire"></i> 480 kcal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="recipe-card reveal-fade-up" data-delay="250">
+          <div class="card-img-wrapper">
+            <span class="card-tag">Burgers</span>
+            <button class="card-fav-btn" data-id="5" data-title="Double Smash Cheeseburger">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80" alt="Cheeseburger">
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="card-rating"><i class="fa-solid fa-star"></i> 4.7</span>
+              <span class="card-difficulty">Easy</span>
+            </div>
+            <h3 class="card-title"><a href="recipe.html?id=5">Double Smash Cheeseburger</a></h3>
+            <p class="card-desc">Crispy beef smash patties, melted American cheese, caramelized onions, and secret burger sauce on brioche buns.</p>
+            <div class="card-footer">
+              <span><i class="fa-regular fa-clock"></i> 25 Min</span>
+              <span><i class="fa-solid fa-fire"></i> 780 kcal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="recipe-card reveal-fade-up" data-delay="300">
+          <div class="card-img-wrapper">
+            <span class="card-tag">Indian</span>
+            <button class="card-fav-btn" data-id="6" data-title="Classic Chicken Tikka Masala">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80" alt="Chicken Tikka Masala">
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="card-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+              <span class="card-difficulty">Medium</span>
+            </div>
+            <h3 class="card-title"><a href="recipe.html?id=6">Classic Chicken Tikka Masala</a></h3>
+            <p class="card-desc">Tender pieces of marinated chicken grilled to perfection and then simmered in a rich, creamy, spiced tomato curry sauce.</p>
+            <div class="card-footer">
+              <span><i class="fa-regular fa-clock"></i> 60 Min</span>
+              <span><i class="fa-solid fa-fire"></i> 480 kcal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Recipes Slider (Auto-scrolling) -->
+  <section class="section popular-slider-section" style="background-color: var(--card-bg); overflow: hidden; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-title-wrapper reveal-fade-up">
+        <span class="section-subtitle">Rising Stars</span>
+        <h2 class="section-title">Popular Recipes</h2>
+      </div>
+
+      <div class="slider-container" style="display: flex; gap: 30px; overflow-x: auto; padding: 20px 5px 40px 5px; scrollbar-width: thin; cursor: grab;">
+        
+        <!-- Popular 1 (Pizza) -->
+        <div class="recipe-card" style="flex: 0 0 320px;">
+          <div class="card-img-wrapper"><span class="card-tag">Pizza</span><img src="https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?auto=format&fit=crop&w=800&q=80" alt=""></div>
+          <div class="card-content">
+            <h3 class="card-title"><a href="recipe.html?id=1">Classic Margherita Pizza</a></h3>
+            <div class="card-footer"><span><i class="fa-solid fa-star" style="color:var(--secondary-color);"></i> 4.8</span><span>30 Min</span></div>
+          </div>
+        </div>
+
+        <!-- Popular 2 (Ramen) -->
+        <div class="recipe-card" style="flex: 0 0 320px;">
+          <div class="card-img-wrapper"><span class="card-tag">Asian</span><img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80" alt=""></div>
+          <div class="card-content">
+            <h3 class="card-title"><a href="recipe.html?id=2">Authentic Shoyu Ramen</a></h3>
+            <div class="card-footer"><span><i class="fa-solid fa-star" style="color:var(--secondary-color);"></i> 4.9</span><span>150 Min</span></div>
+          </div>
+        </div>
+
+        <!-- Popular 3 (Burger) -->
+        <div class="recipe-card" style="flex: 0 0 320px;">
+          <div class="card-img-wrapper"><span class="card-tag">Burgers</span><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80" alt=""></div>
+          <div class="card-content">
+            <h3 class="card-title"><a href="recipe.html?id=5">Double Smash Cheeseburger</a></h3>
+            <div class="card-footer"><span><i class="fa-solid fa-star" style="color:var(--secondary-color);"></i> 4.7</span><span>25 Min</span></div>
+          </div>
+        </div>
+
+        <!-- Popular 4 (Chicken Tikka) -->
+        <div class="recipe-card" style="flex: 0 0 320px;">
+          <div class="card-img-wrapper"><span class="card-tag">Indian</span><img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80" alt=""></div>
+          <div class="card-content">
+            <h3 class="card-title"><a href="recipe.html?id=6">Classic Chicken Tikka Masala</a></h3>
+            <div class="card-footer"><span><i class="fa-solid fa-star" style="color:var(--secondary-color);"></i> 4.9</span><span>60 Min</span></div>
+          </div>
+        </div>
+
+        <!-- Popular 5 (Biryani) -->
+        <div class="recipe-card" style="flex: 0 0 320px;">
+          <div class="card-img-wrapper"><span class="card-tag">Indian</span><img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80" alt=""></div>
+          <div class="card-content">
+            <h3 class="card-title"><a href="recipe.html?id=12">Vegetable Dum Biryani</a></h3>
+            <div class="card-footer"><span><i class="fa-solid fa-star" style="color:var(--secondary-color);"></i> 4.8</span><span>75 Min</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Healthy Tips Section -->
+  <section class="section healthy-tips-section">
+    <div class="container" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: center;">
+      <div class="reveal-fade-up">
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80" alt="Healthy Plate" class="float-item-1" style="width: 100%; border-radius: 30px; box-shadow: var(--shadow-md); transform: rotate(-3deg);">
+      </div>
+      <div class="reveal-fade-up" data-delay="150">
+        <span class="section-subtitle">Lifestyle Guide</span>
+        <h2 class="section-title" style="margin-bottom: 25px;">Eat Healthy, Feel Awesome</h2>
+        <ul style="list-style: none;">
+          <li style="display: flex; gap: 15px; margin-bottom: 20px; align-items: flex-start;">
+            <span style="width: 32px; height: 32px; border-radius: 50%; background-color: rgba(6, 214, 160, 0.15); color: var(--accent-color); display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0;">1</span>
+            <div>
+              <h4 style="font-size: 1.1rem; color: var(--dark-color); margin-bottom: 4px;">Choose Whole Foods</h4>
+              <p style="font-size: 0.9rem; color: var(--text-light);">Focus on unprocessed ingredients like vegetables, grains, nuts, and clean proteins to load up on vitamins.</p>
+            </div>
+          </li>
+          <li style="display: flex; gap: 15px; margin-bottom: 20px; align-items: flex-start;">
+            <span style="width: 32px; height: 32px; border-radius: 50%; background-color: rgba(6, 214, 160, 0.15); color: var(--accent-color); display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0;">2</span>
+            <div>
+              <h4 style="font-size: 1.1rem; color: var(--dark-color); margin-bottom: 4px;">Control Portion Sizes</h4>
+              <p style="font-size: 0.9rem; color: var(--text-light);">Use smaller plates and listen to your body's natural hunger cues to prevent overeating.</p>
+            </div>
+          </li>
+          <li style="display: flex; gap: 15px; align-items: flex-start;">
+            <span style="width: 32px; height: 32px; border-radius: 50%; background-color: rgba(6, 214, 160, 0.15); color: var(--accent-color); display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0;">3</span>
+            <div>
+              <h4 style="font-size: 1.1rem; color: var(--dark-color); margin-bottom: 4px;">Drink Abundant Water</h4>
+              <p style="font-size: 0.9rem; color: var(--text-light);">Hydration keeps your digestive tract running smoothly and suppresses unnecessary cravings.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section testimonials-section" style="background-color: var(--card-bg); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-title-wrapper reveal-fade-up">
+        <span class="section-subtitle">Reviews</span>
+        <h2 class="section-title">What Cooking Lovers Say</h2>
+      </div>
+
+      <div class="testimonial-cards-container" style="max-width: 700px; margin: 0 auto; min-height: 240px; position: relative;">
+        <!-- Review 1 -->
+        <div class="testimonial-card active" style="background-color: var(--bg-color); border: 1px solid var(--border-color); border-radius: 20px; padding: 40px; box-shadow: var(--shadow-sm); text-align: center; transition: opacity 0.5s ease; position: absolute; width: 100%;">
+          <div style="color: var(--secondary-color); font-size: 1.5rem; margin-bottom: 15px;">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p style="font-size: 1.1rem; font-style: italic; color: var(--text-color); margin-bottom: 25px;">
+            "FlavorBook has completely changed my cooking routine. The step-by-step instructions with beautiful pictures make it extremely easy to prepare elegant dinners!"
+          </p>
+          <h4 style="color: var(--dark-color);">- Sarah Jenkins, Home Cook</h4>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="testimonial-card" style="background-color: var(--bg-color); border: 1px solid var(--border-color); border-radius: 20px; padding: 40px; box-shadow: var(--shadow-sm); text-align: center; transition: opacity 0.5s ease; position: absolute; width: 100%; opacity: 0; pointer-events: none;">
+          <div style="color: var(--secondary-color); font-size: 1.5rem; margin-bottom: 15px;">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p style="font-size: 1.1rem; font-style: italic; color: var(--text-color); margin-bottom: 25px;">
+            "As an amateur chef, the detailed nutritional content breakdown and clean ingredient check-lists are perfect. The dark mode looks exceptionally premium."
+          </p>
+          <h4 style="color: var(--dark-color);">- David Vance, Culinary Enthusiast</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="section newsletter-section">
+    <div class="container">
+      <div class="newsletter-card reveal-fade-up" style="background: linear-gradient(135deg, var(--primary-color), #ff8454); border-radius: 30px; padding: 60px 40px; text-align: center; color: white; box-shadow: var(--shadow-lg);">
+        <h2 style="font-size: 2.2rem; font-family: var(--font-headings); margin-bottom: 12px; color: white;">Subscribe For New Recipes</h2>
+        <p style="font-size: 1rem; max-width: 500px; margin: 0 auto 35px auto; opacity: 0.9;">
+          Join our recipe club and get fresh meal ideas, kitchen hacks, and exclusive culinary guides directly to your inbox every week!
+        </p>
+        <form id="newsletter-form" class="newsletter-form" style="max-width: 500px; margin: 0 auto;">
+          <input type="email" placeholder="Enter your email address" required style="width: 100%; padding: 18px 24px; border-radius: 50px; border: none; font-size: 1rem;">
+          <button type="submit" class="btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <a href="index.html" class="logo" style="color: white;">🍳 Flavor<span>Book</span></a>
+          <p>Making cooking fun, accessible, and gourmet for foodies around the globe. Grab your apron and join the FlavorBook family!</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h3 class="footer-links-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">All Recipes</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="favorites.html">Saved Favorites</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h3 class="footer-links-title">Company</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Story</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login Portal</a></li>
+            <li><a href="404.html">404 Error</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4>Weekly Inspiration</h4>
+          <p>Get recipes, dining advice, and kitchen hacks directly to your feed.</p>
+          <div class="newsletter-form">
+            <input type="email" id="footer-newsletter-email" placeholder="Enter email" style="padding-right: 120px;">
+            <button id="footer-newsletter-btn">Join</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 FlavorBook. All Rights Reserved. Created as a Premium Portfolio Project.</p>
+        <p>Design styled with <i class="fa-solid fa-heart" style="color:var(--primary-color);"></i> by Team Antigravity.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- Toast Alert Overlay -->
+  <div class="toast-container"></div>
+
+  <!-- Scripts -->
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <!-- Controllers -->
+  <script src="js/main.js"></script>
+  <script src="js/darkmode.js"></script>
+  <script src="js/favorites.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/animation.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View your collection of saved recipes on FlavorBook. Add or remove favorites and access them offline anytime.">
+  <title>FlavorBook – Saved Favorites</title>
+  
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/dark.css">
+</head>
+<body style="overflow-y: hidden;">
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loader-container">
+      <div class="pot-wrapper">
+        <div class="steam-container">
+          <div class="steam"></div>
+          <div class="steam"></div>
+          <div class="steam"></div>
+        </div>
+        <div class="pot-lid"></div>
+        <div class="pot-handle left"></div>
+        <div class="pot-handle right"></div>
+        <div class="pot"></div>
+      </div>
+      <div class="loading-percentage">0%</div>
+      <div class="loading-progress">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo">🍳 Flavor<span>Book</span></a>
+      
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="recipes.html" class="nav-link">Recipes</a></li>
+        <li><a href="categories.html" class="nav-link">Categories</a></li>
+        <li><a href="favorites.html" class="nav-link active">Favorites</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="login.html" class="nav-link">Login</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="search-trigger" id="open-search" aria-label="Open Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="theme-toggle" aria-label="Toggle Dark Mode"><i class="fa-solid fa-moon"></i></button>
+        <button class="hamburger" aria-label="Open Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Global Search Overlay -->
+  <div class="search-overlay">
+    <button class="search-close" aria-label="Close Search">&times;</button>
+    <div class="search-box">
+      <input type="text" id="global-search-input" placeholder="Search recipes, ingredients, cuisines...">
+      <button id="global-search-btn" aria-label="Submit Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <div id="search-suggestions" style="display: none; background-color: var(--card-bg); border-radius: 12px; margin-top: 10px; box-shadow: var(--shadow-lg); overflow: hidden;"></div>
+    </div>
+  </div>
+
+  <!-- Favorites Catalog Grid -->
+  <main class="section" style="padding-top: 135px; min-height: 80vh;">
+    <div class="container">
+      
+      <div class="section-title-wrapper reveal-fade-up">
+        <span class="section-subtitle">Your Collection</span>
+        <h2 class="section-title">Saved Recipes</h2>
+      </div>
+
+      <!-- Favorites dynamic content grid -->
+      <div class="recipes-grid" id="favorites-page-grid" style="transition: opacity 0.3s ease, transform 0.3s ease;">
+        <!-- Javascript renders saved cards here -->
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <a href="index.html" class="logo" style="color: white;">🍳 Flavor<span>Book</span></a>
+          <p>Making cooking fun, accessible, and gourmet for foodies around the globe. Grab your apron and join the FlavorBook family!</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h3 class="footer-links-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">All Recipes</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="favorites.html">Saved Favorites</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h3 class="footer-links-title">Company</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Story</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login Portal</a></li>
+            <li><a href="404.html">404 Error</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4>Weekly Inspiration</h4>
+          <p>Get recipes, dining advice, and kitchen hacks directly to your feed.</p>
+          <div class="newsletter-form">
+            <input type="email" id="footer-newsletter-email" placeholder="Enter email" style="padding-right: 120px;">
+            <button id="footer-newsletter-btn">Join</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 FlavorBook. All Rights Reserved. Created as a Premium Portfolio Project.</p>
+        <p>Design styled with <i class="fa-solid fa-heart" style="color:var(--primary-color);"></i> by Team Antigravity.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- Toast Alert Overlay -->
+  <div class="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/darkmode.js"></script>
+  <script src="js/favorites.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/favorites-page.js"></script>
+  <script src="js/animation.js"></script>
+</body>
+</html>

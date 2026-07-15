@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse our collection of hundreds of recipes. Search by ingredients, filter by category or difficulty, and find your next delicious meal.">
+  <title>FlavorBook – Explore Recipes</title>
+  
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/dark.css">
+  
+  <style>
+    /* Custom styles for the catalog layouts */
+    .recipes-catalog-layout {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 40px;
+    }
+    
+    .catalog-sidebar {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: var(--shadow-sm);
+      height: fit-content;
+      position: sticky;
+      top: 100px;
+    }
+    
+    .filter-group {
+      margin-bottom: 30px;
+    }
+    
+    .filter-group:last-child {
+      margin-bottom: 0;
+    }
+    
+    .filter-title {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .filter-control {
+      width: 100%;
+      padding: 12px 16px;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+    
+    .category-filter-btn {
+      width: 100%;
+      text-align: left;
+      padding: 10px 16px;
+      border-radius: 10px;
+      border: none;
+      background: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--text-color);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 5px;
+      transition: background-color var(--transition-fast), color var(--transition-fast);
+    }
+    
+    .category-filter-btn:hover, .category-filter-btn.active {
+      background-color: rgba(255, 107, 53, 0.1);
+      color: var(--primary-color);
+    }
+    
+    /* Time slider styles */
+    .range-wrap {
+      position: relative;
+    }
+    
+    .range-slider {
+      width: 100%;
+      height: 6px;
+      background: var(--border-color);
+      border-radius: 3px;
+      outline: none;
+      -webkit-appearance: none;
+    }
+    
+    .range-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--primary-color);
+      cursor: pointer;
+      box-shadow: var(--shadow-sm);
+    }
+    
+    .range-values {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-light);
+    }
+    
+    /* Catalog Header bar */
+    .catalog-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    
+    .catalog-sort {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    
+    /* Empty State */
+    .empty-state {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 60px 40px;
+    }
+    
+    .empty-state i {
+      font-size: 4rem;
+      color: var(--primary-color);
+      margin-bottom: 20px;
+      opacity: 0.8;
+    }
+    
+    .empty-state h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    
+    .empty-state p {
+      color: var(--text-light);
+    }
+    
+    /* Pagination */
+    .pagination-wrapper {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+    
+    .page-btn {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      border: 1px solid var(--border-color);
+      background-color: var(--card-bg);
+      color: var(--text-color);
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+    }
+    
+    .page-btn:hover, .page-btn.active {
+      background-color: var(--primary-color);
+      color: white;
+      border-color: var(--primary-color);
+    }
+    
+    .page-btn.disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+    
+    @media (max-width: 768px) {
+      .recipes-catalog-layout {
+        grid-template-columns: 1fr;
+      }
+      
+      .catalog-sidebar {
+        position: relative;
+        top: auto;
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+<body style="overflow-y: hidden;">
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loader-container">
+      <div class="pot-wrapper">
+        <div class="steam-container">
+          <div class="steam"></div>
+          <div class="steam"></div>
+          <div class="steam"></div>
+        </div>
+        <div class="pot-lid"></div>
+        <div class="pot-handle left"></div>
+        <div class="pot-handle right"></div>
+        <div class="pot"></div>
+      </div>
+      <div class="loading-percentage">0%</div>
+      <div class="loading-progress">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo">🍳 Flavor<span>Book</span></a>
+      
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="recipes.html" class="nav-link active">Recipes</a></li>
+        <li><a href="categories.html" class="nav-link">Categories</a></li>
+        <li><a href="favorites.html" class="nav-link">Favorites</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="login.html" class="nav-link">Login</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="search-trigger" id="open-search" aria-label="Open Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="theme-toggle" aria-label="Toggle Dark Mode"><i class="fa-solid fa-moon"></i></button>
+        <button class="hamburger" aria-label="Open Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Global Search Overlay -->
+  <div class="search-overlay">
+    <button class="search-close" aria-label="Close Search">&times;</button>
+    <div class="search-box">
+      <input type="text" id="global-search-input" placeholder="Search recipes, ingredients, cuisines...">
+      <button id="global-search-btn" aria-label="Submit Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <div id="search-suggestions" style="display: none; background-color: var(--card-bg); border-radius: 12px; margin-top: 10px; box-shadow: var(--shadow-lg); overflow: hidden;"></div>
+    </div>
+  </div>
+
+  <!-- Main Catalog Area -->
+  <main class="section" style="padding-top: 130px;">
+    <div class="container">
+      
+      <div class="recipes-catalog-layout">
+        
+        <!-- Filters Sidebar -->
+        <aside class="catalog-sidebar reveal-fade-up">
+          
+          <div class="filter-group">
+            <h3 class="filter-title"><i class="fa-solid fa-magnifying-glass"></i> Search</h3>
+            <input type="text" id="recipe-search" class="filter-control" placeholder="Search this category...">
+          </div>
+
+          <div class="filter-group">
+            <h3 class="filter-title"><i class="fa-solid fa-layer-group"></i> Category</h3>
+            <div id="categories-filter-bar">
+              <button class="category-filter-btn active" data-category="all">All Recipes <i class="fa-solid fa-chevron-right"></i></button>
+              <button class="category-filter-btn" data-category="Pizza">🍕 Pizza <i class="fa-solid fa-chevron-right"></i></button>
+              <button class="category-filter-btn" data-category="Asian">🍜 Asian <i class="fa-solid fa-chevron-right"></i></button>
+              <button class="category-filter-btn" data-category="Salad">🥗 Salad <i class="fa-solid fa-chevron-right"></i></button>
+              <button class="category-filter-btn" data-category="Dessert">🍰 Dessert <i class="fa-solid fa-chevron-right"></i></button>
+              <button class="category-filter-btn" data-category="Burgers">🍔 Burgers <i class="fa-solid fa-chevron-right"></i></button>
+              <button class="category-filter-btn" data-category="Indian">🥘 Indian <i class="fa-solid fa-chevron-right"></i></button>
+              <button class="category-filter-btn" data-category="Breakfast">🥞 Breakfast <i class="fa-solid fa-chevron-right"></i></button>
+              <button class="category-filter-btn" data-category="Mexican">🌮 Mexican <i class="fa-solid fa-chevron-right"></i></button>
+              <button class="category-filter-btn" data-category="Drinks">🍹 Drinks <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <h3 class="filter-title"><i class="fa-solid fa-clock"></i> Cooking Time</h3>
+            <div class="range-wrap">
+              <input type="range" id="time-range" class="range-slider" min="5" max="120" step="5" value="120">
+              <div class="range-values">
+                <span>5m</span>
+                <span id="time-val" style="color: var(--primary-color); font-weight:700;">Any Time</span>
+                <span>2h+</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <h3 class="filter-title"><i class="fa-solid fa-dumbbell"></i> Difficulty</h3>
+            <select id="difficulty-select" class="filter-control">
+              <option value="all">All Difficulties</option>
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+            </select>
+          </div>
+
+        </aside>
+
+        <!-- Recipe Catalog Grid -->
+        <section class="catalog-main-content">
+          
+          <div class="catalog-header reveal-fade-up">
+            <h2 style="font-size: 1.8rem; color: var(--dark-color);">Recipe Database</h2>
+            <div class="catalog-sort">
+              <span style="font-weight:600; font-size:0.9rem; color:var(--text-light);">Sort By:</span>
+              <select id="sort-select" class="filter-control" style="width: 160px; padding: 8px 12px;">
+                <option value="rating">Highest Rating</option>
+                <option value="popular">Popularity</option>
+                <option value="newest">Newest Added</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- The grid where cards will load dynamically -->
+          <div class="recipes-grid" id="recipes-page-grid" style="transition: opacity 0.3s ease, transform 0.3s ease;">
+            <!-- Loading Skeletons will show here first -->
+          </div>
+
+          <!-- Pagination buttons -->
+          <div class="pagination-wrapper" id="pagination"></div>
+
+        </section>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <a href="index.html" class="logo" style="color: white;">🍳 Flavor<span>Book</span></a>
+          <p>Making cooking fun, accessible, and gourmet for foodies around the globe. Grab your apron and join the FlavorBook family!</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h3 class="footer-links-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">All Recipes</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="favorites.html">Saved Favorites</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h3 class="footer-links-title">Company</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Story</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login Portal</a></li>
+            <li><a href="404.html">404 Error</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4>Weekly Inspiration</h4>
+          <p>Get recipes, dining advice, and kitchen hacks directly to your feed.</p>
+          <div class="newsletter-form">
+            <input type="email" id="footer-newsletter-email" placeholder="Enter email" style="padding-right: 120px;">
+            <button id="footer-newsletter-btn">Join</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 FlavorBook. All Rights Reserved. Created as a Premium Portfolio Project.</p>
+        <p>Design styled with <i class="fa-solid fa-heart" style="color:var(--primary-color);"></i> by Team Antigravity.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- Toast Alert Overlay -->
+  <div class="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/darkmode.js"></script>
+  <script src="js/favorites.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/animation.js"></script>
+</body>
+</html>

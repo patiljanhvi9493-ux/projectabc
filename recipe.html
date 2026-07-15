@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View detailed recipe instructions, check ingredients off, follow step-by-step progress, read nutrition analysis and watch video tutorial guide.">
+  <title>FlavorBook – Recipe Guide</title>
+  
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/dark.css">
+  
+  <style>
+    .recipe-details-grid {
+      display: grid;
+      grid-template-columns: 2fr 1.1fr;
+      gap: 50px;
+    }
+    
+    .recipe-meta-strip {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 25px;
+      color: var(--text-light);
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+    
+    .recipe-meta-strip span {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .recipe-meta-strip i {
+      color: var(--primary-color);
+      font-size: 1.1rem;
+    }
+    
+    .action-panel {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+    
+    .action-btn {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 50px;
+      padding: 12px 24px;
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--text-color);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+    }
+    
+    .action-btn:hover {
+      background-color: rgba(255, 107, 53, 0.05);
+      border-color: var(--primary-color);
+      color: var(--primary-color);
+    }
+    
+    .action-btn.active {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+      color: white !important;
+    }
+    
+    .detail-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 35px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 40px;
+    }
+    
+    .detail-card-title {
+      font-size: 1.4rem;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 12px;
+    }
+    
+    /* Step active tracker classes */
+    .step-card.active {
+      border-color: var(--primary-color) !important;
+      box-shadow: var(--shadow-md);
+      background-color: rgba(255, 107, 53, 0.03) !important;
+    }
+    
+    /* Nutrition Bars */
+    .nutrition-item {
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 12px;
+      background-color: var(--bg-color);
+      border: 1px solid var(--border-color);
+    }
+    
+    .nutrition-meta {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    
+    .nutrition-bar-bg {
+      width: 100%;
+      height: 8px;
+      background-color: var(--border-color);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    
+    .nutrition-bar-fill {
+      width: 0;
+      height: 100%;
+      border-radius: 4px;
+      transition: width 1s cubic-bezier(0.1, 0.8, 0.1, 1);
+    }
+    
+    .comment-form input, .comment-form textarea {
+      width: 100%;
+      padding: 14px 18px;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin-bottom: 15px;
+    }
+    
+    /* Emoji reaction section */
+    .reactions-panel {
+      display: flex;
+      gap: 10px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+    
+    .reaction-btn {
+      background-color: var(--bg-color);
+      border: 1px solid var(--border-color);
+      border-radius: 30px;
+      padding: 8px 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-color);
+      transition: transform 0.2s, background-color 0.2s;
+    }
+    
+    .reaction-btn:hover {
+      transform: scale(1.05);
+      background-color: var(--border-color);
+    }
+    
+    /* Print overrides */
+    @media print {
+      header, footer, .search-overlay, .action-panel, .video-section, .comments-section, .related-recipes-section, .back-to-top, .toast-container {
+        display: none !important;
+      }
+      
+      body {
+        background-color: white !important;
+        color: black !important;
+      }
+      
+      .recipe-details-grid {
+        grid-template-columns: 1fr !important;
+      }
+      
+      .detail-card {
+        box-shadow: none !important;
+        border: none !important;
+        padding: 0 !important;
+        margin-bottom: 30px !important;
+      }
+    }
+  </style>
+</head>
+<body style="overflow-y: hidden;">
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loader-container">
+      <div class="pot-wrapper">
+        <div class="steam-container">
+          <div class="steam"></div>
+          <div class="steam"></div>
+          <div class="steam"></div>
+        </div>
+        <div class="pot-lid"></div>
+        <div class="pot-handle left"></div>
+        <div class="pot-handle right"></div>
+        <div class="pot"></div>
+      </div>
+      <div class="loading-percentage">0%</div>
+      <div class="loading-progress">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo">🍳 Flavor<span>Book</span></a>
+      
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="recipes.html" class="nav-link">Recipes</a></li>
+        <li><a href="categories.html" class="nav-link">Categories</a></li>
+        <li><a href="favorites.html" class="nav-link">Favorites</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="login.html" class="nav-link">Login</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="search-trigger" id="open-search" aria-label="Open Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="theme-toggle" aria-label="Toggle Dark Mode"><i class="fa-solid fa-moon"></i></button>
+        <button class="hamburger" aria-label="Open Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Global Search Overlay -->
+  <div class="search-overlay">
+    <button class="search-close" aria-label="Close Search">&times;</button>
+    <div class="search-box">
+      <input type="text" id="global-search-input" placeholder="Search recipes, ingredients, cuisines...">
+      <button id="global-search-btn" aria-label="Submit Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <div id="search-suggestions" style="display: none; background-color: var(--card-bg); border-radius: 12px; margin-top: 10px; box-shadow: var(--shadow-lg); overflow: hidden;"></div>
+    </div>
+  </div>
+
+  <!-- Dynamic Content Container -->
+  <main class="section" id="recipe-detail-container" style="padding-top: 130px;">
+    <div class="container">
+      
+      <!-- Recipe Title Info -->
+      <div class="recipe-header reveal-fade-up" style="margin-bottom: 30px;">
+        <span id="recipe-category-tag" style="background-color: var(--primary-color); color: white; padding: 6px 16px; border-radius: 30px; font-weight: 700; font-size: 0.8rem; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 15px; display: inline-block;">
+          <span id="recipe-category">Pizza</span> &bull; <span id="recipe-cuisine">Italian</span>
+        </span>
+        <h1 id="recipe-title" style="font-size: 2.8rem; margin-bottom: 12px; color: var(--dark-color);">Classic Margherita Pizza</h1>
+        <div id="recipe-rating" style="font-size: 1.1rem; color: var(--secondary-color); font-weight: 700; display: flex; align-items: center; gap: 8px;">
+          <!-- Star ratings populated by JS -->
+        </div>
+      </div>
+
+      <!-- Action Panel Buttons -->
+      <div class="action-panel reveal-fade-up">
+        <button class="action-btn" id="recipe-fav-btn"><i class="fa-regular fa-heart"></i> Save to Favorites</button>
+        <button class="action-btn" id="recipe-print-btn"><i class="fa-solid fa-print"></i> Print Recipe</button>
+        <button class="action-btn" id="recipe-share-btn"><i class="fa-solid fa-share-nodes"></i> Share Recipe</button>
+      </div>
+
+      <!-- Master Layout grid -->
+      <div class="recipe-details-grid">
+        
+        <!-- Left Panel: Large Image, Ingredients, Steps -->
+        <div class="recipe-left-content">
+          
+          <div class="recipe-image-wrap reveal-fade-up" style="border-radius: 24px; overflow: hidden; margin-bottom: 40px; box-shadow: var(--shadow-md); height: 420px;">
+            <img id="recipe-image" src="" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+
+          <!-- Ingredients checklist Card -->
+          <div class="detail-card reveal-fade-up">
+            <h3 class="detail-card-title">
+              <i class="fa-solid fa-basket-shopping" style="color:var(--primary-color);"></i> Needed Ingredients
+            </h3>
+            <ul id="ingredients-list" style="list-style: none; padding-left: 0;">
+              <!-- Populated by JS -->
+            </ul>
+          </div>
+
+          <!-- Instructions Card -->
+          <div class="detail-card reveal-fade-up">
+            <h3 class="detail-card-title">
+              <i class="fa-solid fa-kitchen-cooker" style="color:var(--primary-color);"></i> Cooking Instructions
+            </h3>
+            
+            <!-- Step completion progress indicator -->
+            <div style="margin-bottom: 30px;">
+              <div style="display:flex; justify-content:space-between; margin-bottom: 8px; font-weight: 600; font-size: 0.9rem;">
+                <span id="steps-progress-text">0% Completed</span>
+                <span>Check off completed steps</span>
+              </div>
+              <div class="progress-bar-bg" style="width:100%; height:8px; background-color:var(--border-color); border-radius:4px; overflow:hidden;">
+                <div id="steps-progress-bar" style="width:0%; height:100%; background-color:var(--accent-color); border-radius:4px; transition: width 0.3s ease;"></div>
+              </div>
+            </div>
+
+            <div id="instructions-list">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+
+          <!-- Video Section -->
+          <div class="detail-card video-section reveal-fade-up">
+            <h3 class="detail-card-title"><i class="fa-solid fa-circle-play" style="color:var(--primary-color);"></i> Video Tutorial</h3>
+            <div style="position:relative; padding-bottom:56.25%; height:0; border-radius:15px; overflow:hidden; box-shadow:var(--shadow-sm);">
+              <iframe id="recipe-video-iframe" src="" style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <!-- Comments/Reviews Section -->
+          <div class="detail-card comments-section reveal-fade-up">
+            <h3 class="detail-card-title"><i class="fa-solid fa-comments" style="color:var(--primary-color);"></i> Comments & Reactions</h3>
+            
+            <form id="comment-form" class="comment-form" style="margin-bottom: 40px;">
+              <input type="text" id="comment-name" placeholder="Your Name" required>
+              <textarea id="comment-body" rows="4" placeholder="Share your experience or rating with this recipe..." required style="resize:none;"></textarea>
+              <button type="submit" class="btn btn-primary">Submit Review <i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+
+            <div class="reactions-panel" style="border-top:1px solid var(--border-color); padding-top:20px; margin-bottom:45px;">
+              <span style="font-weight: 700; display: block; width: 100%; margin-bottom: 12px;">React to this guide:</span>
+              <button class="reaction-btn" data-reaction="love">❤️ <span class="reaction-count">12</span></button>
+              <button class="reaction-btn" data-reaction="like">👍 <span class="reaction-count">34</span></button>
+              <button class="reaction-btn" data-reaction="fire">🔥 <span class="reaction-count">48</span></button>
+              <button class="reaction-btn" data-reaction="yummy">👨‍🍳 <span class="reaction-count">19</span></button>
+            </div>
+
+            <div id="comments-feed">
+              <!-- Comment feeds dynamically inserted here -->
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Panel: Info Summary Cards, Nutrition -->
+        <div class="recipe-right-content reveal-fade-up">
+          
+          <!-- Recipe Stats Summary -->
+          <div class="detail-card" style="position: sticky; top: 100px;">
+            <h3 class="detail-card-title" style="border:none; margin-bottom: 20px;"><i class="fa-solid fa-chart-pie" style="color:var(--primary-color);"></i> Recipe Stats</h3>
+            <div style="display:grid; grid-template-columns: 1fr; gap:15px; margin-bottom: 30px;">
+              <div style="display:flex; justify-content:space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">
+                <span style="color:var(--text-light); font-weight:500;">Cook/Prep:</span>
+                <span id="recipe-time" style="font-weight:700; color:var(--dark-color);">30 Mins</span>
+              </div>
+              <div style="display:flex; justify-content:space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">
+                <span style="color:var(--text-light); font-weight:500;">Serves:</span>
+                <span id="recipe-servings" style="font-weight:700; color:var(--dark-color);">4 Servings</span>
+              </div>
+              <div style="display:flex; justify-content:space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">
+                <span style="color:var(--text-light); font-weight:500;">Energy:</span>
+                <span id="recipe-calories" style="font-weight:700; color:var(--dark-color);">280 kcal</span>
+              </div>
+            </div>
+
+            <!-- Nutrition Indicators -->
+            <h4 style="margin-bottom: 15px; color: var(--dark-color); font-weight:700;">Nutrient Values</h4>
+            
+            <!-- Protein Bar -->
+            <div class="nutrition-item">
+              <div class="nutrition-meta">
+                <span>Protein</span>
+                <span id="protein-val" style="color:var(--accent-color);">12g</span>
+              </div>
+              <div class="nutrition-bar-bg">
+                <div id="protein-bar" class="nutrition-bar-fill" style="background-color: var(--accent-color);"></div>
+              </div>
+            </div>
+
+            <!-- Fat Bar -->
+            <div class="nutrition-item">
+              <div class="nutrition-meta">
+                <span>Fat</span>
+                <span id="fat-val" style="color:var(--primary-color);">10g</span>
+              </div>
+              <div class="nutrition-bar-bg">
+                <div id="fat-bar" class="nutrition-bar-fill" style="background-color: var(--primary-color);"></div>
+              </div>
+            </div>
+
+            <!-- Carbs Bar -->
+            <div class="nutrition-item">
+              <div class="nutrition-meta">
+                <span>Carbs</span>
+                <span id="carbs-val" style="color:var(--secondary-color);">36g</span>
+              </div>
+              <div class="nutrition-bar-bg">
+                <div id="carbs-bar" class="nutrition-bar-fill" style="background-color: var(--secondary-color);"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Related Recipes Grid -->
+      <section class="section related-recipes-section" style="border-top: 1px solid var(--border-color); margin-top:50px;">
+        <div class="section-title-wrapper reveal-fade-up">
+          <span class="section-subtitle">Suggestions</span>
+          <h2 class="section-title">Related Recipes</h2>
+        </div>
+        <div class="recipes-grid" id="related-recipes-list">
+          <!-- Populated by JS -->
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <a href="index.html" class="logo" style="color: white;">🍳 Flavor<span>Book</span></a>
+          <p>Making cooking fun, accessible, and gourmet for foodies around the globe. Grab your apron and join the FlavorBook family!</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h3 class="footer-links-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">All Recipes</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="favorites.html">Saved Favorites</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h3 class="footer-links-title">Company</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Story</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login Portal</a></li>
+            <li><a href="404.html">404 Error</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4>Weekly Inspiration</h4>
+          <p>Get recipes, dining advice, and kitchen hacks directly to your feed.</p>
+          <div class="newsletter-form">
+            <input type="email" id="footer-newsletter-email" placeholder="Enter email" style="padding-right: 120px;">
+            <button id="footer-newsletter-btn">Join</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 FlavorBook. All Rights Reserved. Created as a Premium Portfolio Project.</p>
+        <p>Design styled with <i class="fa-solid fa-heart" style="color:var(--primary-color);"></i> by Team Antigravity.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- Toast Alert Overlay -->
+  <div class="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/darkmode.js"></script>
+  <script src="js/favorites.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/recipe-detail.js"></script>
+  <script src="js/animation.js"></script>
+</body>
+</html>

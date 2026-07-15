@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create a new FlavorBook account to submit reviews, share recipe guides, and customize your diet lists.">
+  <title>FlavorBook – Register Account</title>
+  
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/dark.css">
+  
+  <style>
+    .auth-page-wrapper {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      position: relative;
+    }
+    
+    .auth-card {
+      background: rgba(255, 255, 255, 0.45);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 30px;
+      padding: 40px;
+      width: 100%;
+      max-width: 440px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      position: relative;
+      z-index: 10;
+    }
+    
+    .auth-back-btn {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      font-weight: 600;
+      color: var(--dark-color);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      z-index: 20;
+    }
+    
+    .auth-back-btn:hover {
+      color: var(--primary-color);
+    }
+  </style>
+</head>
+<body style="overflow-y: hidden;">
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loader-container">
+      <div class="pot-wrapper">
+        <div class="steam-container">
+          <div class="steam"></div>
+          <div class="steam"></div>
+          <div class="steam"></div>
+        </div>
+        <div class="pot-lid"></div>
+        <div class="pot-handle left"></div>
+        <div class="pot-handle right"></div>
+        <div class="pot"></div>
+      </div>
+      <div class="loading-percentage">0%</div>
+      <div class="loading-progress">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Bubble Background -->
+  <div class="bubble-background">
+    <div class="bubble" style="width: 80px; height: 80px; left: 10%; animation-duration: 12s;"></div>
+    <div class="bubble" style="width: 120px; height: 120px; left: 35%; animation-duration: 18s; animation-delay: 2s;"></div>
+    <div class="bubble" style="width: 60px; height: 60px; left: 55%; animation-duration: 10s; animation-delay: 4s;"></div>
+    <div class="bubble" style="width: 100px; height: 100px; left: 75%; animation-duration: 15s; animation-delay: 1s;"></div>
+    <div class="bubble" style="width: 50px; height: 50px; left: 90%; animation-duration: 8s; animation-delay: 3s;"></div>
+  </div>
+
+  <!-- Back Home Link -->
+  <a href="index.html" class="auth-back-btn"><i class="fa-solid fa-arrow-left"></i> Home</a>
+
+  <!-- Auth Layout Card -->
+  <div class="auth-page-wrapper">
+    
+    <div class="auth-card">
+      <div style="text-align: center; margin-bottom: 25px;">
+        <h2 style="font-size: 1.8rem; color: var(--dark-color); margin-bottom: 6px;">Create Account</h2>
+        <p style="color: var(--text-light); font-size: 0.85rem;">Join the global culinary community</p>
+      </div>
+
+      <!-- Register Form -->
+      <form id="register-form">
+        <div class="form-group">
+          <label for="reg-name" style="display:block; font-weight:600; font-size:0.85rem; margin-bottom:6px; color:var(--dark-color);">Full Name</label>
+          <input type="text" id="reg-name" class="glow-input" placeholder="Chef Marie" required style="width: 100%; padding: 12px 14px; border-radius: 10px; border: 1px solid var(--border-color); background-color: var(--card-bg); color: var(--text-color);">
+        </div>
+
+        <div class="form-group">
+          <label for="reg-email" style="display:block; font-weight:600; font-size:0.85rem; margin-bottom:6px; color:var(--dark-color);">Email Address</label>
+          <input type="email" id="reg-email" class="glow-input" placeholder="marie@email.com" required style="width: 100%; padding: 12px 14px; border-radius: 10px; border: 1px solid var(--border-color); background-color: var(--card-bg); color: var(--text-color);">
+        </div>
+
+        <div class="form-group">
+          <label for="reg-pass" style="display:block; font-weight:600; font-size:0.85rem; margin-bottom:6px; color:var(--dark-color);">Password</label>
+          <input type="password" id="reg-pass" class="glow-input" placeholder="••••••••" required style="width: 100%; padding: 12px 14px; border-radius: 10px; border: 1px solid var(--border-color); background-color: var(--card-bg); color: var(--text-color);">
+        </div>
+
+        <div class="form-group" style="margin-bottom: 20px;">
+          <label for="reg-confirm" style="display:block; font-weight:600; font-size:0.85rem; margin-bottom:6px; color:var(--dark-color);">Confirm Password</label>
+          <input type="password" id="reg-confirm" class="glow-input" placeholder="••••••••" required style="width: 100%; padding: 12px 14px; border-radius: 10px; border: 1px solid var(--border-color); background-color: var(--card-bg); color: var(--text-color);">
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; margin-bottom: 15px;">Register Now <i class="fa-solid fa-user-plus"></i></button>
+      </form>
+
+      <p style="text-align: center; font-size: 0.9rem; color: var(--text-light);">
+        Already have an account? <a href="login.html" style="color: var(--primary-color); font-weight: 700;">Login Here</a>
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Toast Alert Overlay -->
+  <div class="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/darkmode.js"></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Mock Register Submit
+      const registerForm = document.getElementById('register-form');
+      if (registerForm) {
+        registerForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const name = document.getElementById('reg-name').value;
+          const pass = document.getElementById('reg-pass').value;
+          const confirm = document.getElementById('reg-confirm').value;
+
+          if (pass !== confirm) {
+            showToast('Passwords do not match.', 'info');
+            return;
+          }
+
+          showToast(`Account created for ${name}! Please login.`, 'success');
+          setTimeout(() => {
+            window.location.href = 'login.html';
+          }, 1500);
+        });
+      }
+    });
+  </script>
+</body>
+</html>

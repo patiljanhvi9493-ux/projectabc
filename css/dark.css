@@ -1,0 +1,128 @@
+/* FLAVORBOOK DARK MODE STYLESHEET */
+
+body.dark-mode {
+  --bg-color: #121212;
+  --card-bg: #1E1E1E;
+  --dark-color: #F8F9FA;
+  --text-color: #E0E0E0;
+  --text-light: #A0A0A0;
+  --border-color: #2D2D2D;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.45);
+}
+
+/* Specific Element Overrides in Dark Mode */
+body.dark-mode header.scrolled {
+  background-color: rgba(18, 18, 18, 0.85);
+  border-bottom: 1px solid rgba(255, 107, 53, 0.2);
+}
+
+body.dark-mode .nav-menu {
+  background-color: #1E1E1E;
+  border-left: 1px solid #2D2D2D;
+}
+
+body.dark-mode .theme-toggle i {
+  color: var(--secondary-color);
+  transform: rotate(360deg);
+}
+
+body.dark-mode .search-trigger:hover, 
+body.dark-mode .theme-toggle:hover {
+  background-color: rgba(255, 209, 102, 0.1);
+}
+
+/* Card favoriting button overrides */
+body.dark-mode .card-fav-btn {
+  background-color: #2D2D2D;
+  color: var(--text-light);
+}
+
+body.dark-mode .card-fav-btn:hover {
+  color: #ff4757;
+}
+
+/* Accordion dropdowns in dark mode */
+body.dark-mode .faq-accordion-item {
+  background-color: #1E1E1E;
+  border-color: #2D2D2D;
+}
+
+body.dark-mode .faq-header {
+  color: var(--dark-color);
+}
+
+body.dark-mode .faq-body {
+  border-top: 1px solid #2D2D2D;
+  color: var(--text-color);
+}
+
+/* Form controls overrides */
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+  background-color: #2A2A2A;
+  border-color: #3A3A3A;
+  color: white;
+}
+
+body.dark-mode input:focus,
+body.dark-mode textarea:focus,
+body.dark-mode select:focus {
+  border-color: var(--primary-color);
+}
+
+/* Glassmorphism auth panel overrides */
+body.dark-mode .auth-card {
+  background: rgba(30, 30, 30, 0.65) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+body.dark-mode .btn-secondary {
+  border-color: var(--dark-color);
+  color: var(--dark-color);
+}
+
+body.dark-mode .btn-secondary:hover {
+  background-color: var(--dark-color);
+  color: #121212;
+}
+
+/* Detail page elements overrides */
+body.dark-mode .ingredient-label {
+  color: var(--text-color);
+}
+
+body.dark-mode .step-card {
+  background-color: #1E1E1E;
+  border-color: #2D2D2D;
+}
+
+body.dark-mode .step-card.active {
+  border-color: var(--primary-color);
+  background-color: rgba(255, 107, 53, 0.05);
+}
+
+body.dark-mode .nutrition-item {
+  background-color: #1E1E1E;
+  border-color: #2D2D2D;
+}
+
+body.dark-mode .nutrition-val {
+  color: var(--dark-color);
+}
+
+body.dark-mode .comment-box {
+  background-color: #1E1E1E;
+  border-color: #2D2D2D;
+}
+
+/* Custom horizontal slider scrollbar for dark mode */
+body.dark-mode .slider-container::-webkit-scrollbar-track {
+  background: #1A1A1A;
+}
+
+body.dark-mode .slider-container::-webkit-scrollbar-thumb {
+  background: #333333;
+}

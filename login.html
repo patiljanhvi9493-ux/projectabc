@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Access your FlavorBook account to save recipes, submit reviews, and personalize your cooking feeds.">
+  <title>FlavorBook – Login Portal</title>
+  
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/dark.css">
+  
+  <style>
+    .auth-page-wrapper {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      position: relative;
+    }
+    
+    .auth-card {
+      background: rgba(255, 255, 255, 0.45);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 30px;
+      padding: 50px 40px;
+      width: 100%;
+      max-width: 440px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      position: relative;
+      z-index: 10;
+    }
+    
+    .auth-back-btn {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      font-weight: 600;
+      color: var(--dark-color);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      z-index: 20;
+    }
+    
+    .auth-back-btn:hover {
+      color: var(--primary-color);
+    }
+    
+    .social-login-btn {
+      width: 100%;
+      padding: 14px;
+      border-radius: 50px;
+      border: 1px solid var(--border-color);
+      background-color: var(--card-bg);
+      color: var(--text-color);
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 25px;
+      transition: background-color 0.2s, box-shadow 0.2s;
+    }
+    
+    .social-login-btn:hover {
+      background-color: var(--bg-color);
+      box-shadow: var(--shadow-sm);
+    }
+    
+    .divider {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: var(--text-light);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 25px;
+    }
+    
+    .divider::before, .divider::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    .divider:not(:empty)::before {
+      margin-right: .5em;
+    }
+    
+    .divider:not(:empty)::after {
+      margin-left: .5em;
+    }
+  </style>
+</head>
+<body style="overflow-y: hidden;">
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loader-container">
+      <div class="pot-wrapper">
+        <div class="steam-container">
+          <div class="steam"></div>
+          <div class="steam"></div>
+          <div class="steam"></div>
+        </div>
+        <div class="pot-lid"></div>
+        <div class="pot-handle left"></div>
+        <div class="pot-handle right"></div>
+        <div class="pot"></div>
+      </div>
+      <div class="loading-percentage">0%</div>
+      <div class="loading-progress">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Bubble Background -->
+  <div class="bubble-background">
+    <div class="bubble" style="width: 80px; height: 80px; left: 10%; animation-duration: 12s;"></div>
+    <div class="bubble" style="width: 120px; height: 120px; left: 35%; animation-duration: 18s; animation-delay: 2s;"></div>
+    <div class="bubble" style="width: 60px; height: 60px; left: 55%; animation-duration: 10s; animation-delay: 4s;"></div>
+    <div class="bubble" style="width: 100px; height: 100px; left: 75%; animation-duration: 15s; animation-delay: 1s;"></div>
+    <div class="bubble" style="width: 50px; height: 50px; left: 90%; animation-duration: 8s; animation-delay: 3s;"></div>
+  </div>
+
+  <!-- Back Home Link -->
+  <a href="index.html" class="auth-back-btn"><i class="fa-solid fa-arrow-left"></i> Home</a>
+
+  <!-- Auth Layout Card -->
+  <div class="auth-page-wrapper">
+    
+    <div class="auth-card">
+      <div style="text-align: center; margin-bottom: 35px;">
+        <h2 style="font-size: 2rem; color: var(--dark-color); margin-bottom: 6px;">Welcome Back</h2>
+        <p style="color: var(--text-light); font-size: 0.9rem;">Sign in to your culinary account</p>
+      </div>
+
+      <!-- Google Sign In -->
+      <button class="social-login-btn" id="google-login">
+        <i class="fa-brands fa-google" style="color: #ea4335;"></i> Sign in with Google
+      </button>
+
+      <div class="divider">Or Sign In with Email</div>
+
+      <!-- Login Form -->
+      <form id="login-form">
+        <div class="form-group">
+          <label for="login-email">Email Address</label>
+          <input type="email" id="login-email" class="glow-input" placeholder="cook@email.com" required style="width: 100%; padding: 14px; border-radius: 10px; border: 1px solid var(--border-color); background-color: var(--card-bg); color: var(--text-color);">
+        </div>
+
+        <div class="form-group" style="margin-bottom: 25px;">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" class="glow-input" placeholder="••••••••" required style="width: 100%; padding: 14px; border-radius: 10px; border: 1px solid var(--border-color); background-color: var(--card-bg); color: var(--text-color);">
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; margin-bottom: 20px;">Login Portal <i class="fa-solid fa-right-to-bracket"></i></button>
+      </form>
+
+      <p style="text-align: center; font-size: 0.9rem; color: var(--text-light);">
+        Don't have an account? <a href="register.html" style="color: var(--primary-color); font-weight: 700;">Register Here</a>
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Toast Alert Overlay -->
+  <div class="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/darkmode.js"></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Mock Login Submit
+      const loginForm = document.getElementById('login-form');
+      if (loginForm) {
+        loginForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const email = document.getElementById('login-email').value;
+          showToast(`Logged in successfully as ${email}!`, 'success');
+          setTimeout(() => {
+            window.location.href = 'index.html';
+          }, 1500);
+        });
+      }
+
+      // Mock Google Login
+      document.getElementById('google-login').addEventListener('click', () => {
+        showToast('Redirecting to Google Sign-in...', 'info');
+        setTimeout(() => {
+          showToast('Google login complete!', 'success');
+          setTimeout(() => {
+            window.location.href = 'index.html';
+          }, 1000);
+        }, 1500);
+      });
+    });
+  </script>
+</body>
+</html>
