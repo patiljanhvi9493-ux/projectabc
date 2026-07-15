@@ -102,7 +102,20 @@
 
       <div class="hero-image-container reveal-fade-up" data-delay="200" style="position: relative;">
         <div class="image-bg-blob" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)); filter: blur(40px); opacity: 0.15; border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; z-index: -1;"></div>
-        <img src="https://images.unsplash.com/photo-1543353071-10c8ba85a904?auto=format&fit=crop&w=800&q=80" alt="Delicious Healthy Bowl" style="width: 100%; border-radius: 50% 20% 50% 30%; box-shadow: var(--shadow-lg); border: 8px solid white;">
+        <div class="hero-slider">
+          <div class="slide active">
+            <img src="images/pizza_landscape.png" alt="Gourmet Margherita Pizza">
+          </div>
+          <div class="slide">
+            <img src="images/salad_landscape.png" alt="Fresh Healthy Salad Bowl">
+          </div>
+          <div class="slide">
+            <img src="images/ramen_landscape.png" alt="Authentic Japanese Shoyu Ramen">
+          </div>
+          <div class="slide">
+            <img src="images/curry_landscape.png" alt="Spicy Chicken Tikka Curry with Naan">
+          </div>
+        </div>
       </div>
 
     </div>
@@ -116,36 +129,86 @@
         <h2 class="section-title">Browse By Category</h2>
       </div>
 
-      <div class="categories-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px;">
-        <!-- Pizza -->
-        <a href="recipes.html?category=Pizza" class="category-badge reveal-fade-up" data-delay="50" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; background-color: var(--bg-color); border-radius: 20px; text-align: center; border: 1px solid var(--border-color); transition: transform 0.3s ease, border-color 0.3s ease;">
-          <span style="font-size: 2.5rem; margin-bottom: 12px;">🍕</span>
-          <h3 style="font-size: 1.05rem;">Pizza</h3>
+      <div class="categories-grid">
+        <!-- All Recipes -->
+        <a href="recipes.html" class="category-card reveal-fade-up" data-delay="30">
+          <div class="category-card-bg" style="background-image: url('https://images.unsplash.com/photo-1543353071-10c8ba85a904?auto=format&fit=crop&w=400&q=80');"></div>
+          <div class="category-card-overlay"></div>
+          <div class="category-card-content">
+            <h3>All Recipes</h3>
+          </div>
         </a>
-        <!-- Asian -->
-        <a href="recipes.html?category=Asian" class="category-badge reveal-fade-up" data-delay="100" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; background-color: var(--bg-color); border-radius: 20px; text-align: center; border: 1px solid var(--border-color); transition: transform 0.3s ease, border-color 0.3s ease;">
-          <span style="font-size: 2.5rem; margin-bottom: 12px;">🍜</span>
-          <h3 style="font-size: 1.05rem;">Asian</h3>
+        <!-- North Indian -->
+        <a href="recipes.html?category=North%20Indian" class="category-card reveal-fade-up" data-delay="60">
+          <div class="category-card-bg" style="background-image: url('https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=400&q=80');"></div>
+          <div class="category-card-overlay"></div>
+          <div class="category-card-content">
+            <h3>North Indian</h3>
+          </div>
         </a>
-        <!-- Salad -->
-        <a href="recipes.html?category=Salad" class="category-badge reveal-fade-up" data-delay="150" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; background-color: var(--bg-color); border-radius: 20px; text-align: center; border: 1px solid var(--border-color); transition: transform 0.3s ease, border-color 0.3s ease;">
-          <span style="font-size: 2.5rem; margin-bottom: 12px;">🥗</span>
-          <h3 style="font-size: 1.05rem;">Salad</h3>
+        <!-- South Indian -->
+        <a href="recipes.html?category=South%20Indian" class="category-card reveal-fade-up" data-delay="90">
+          <div class="category-card-bg" style="background-image: url('images/dosa.jpg');"></div>
+          <div class="category-card-overlay"></div>
+          <div class="category-card-content">
+            <h3>South Indian</h3>
+          </div>
         </a>
-        <!-- Dessert -->
-        <a href="recipes.html?category=Dessert" class="category-badge reveal-fade-up" data-delay="200" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; background-color: var(--bg-color); border-radius: 20px; text-align: center; border: 1px solid var(--border-color); transition: transform 0.3s ease, border-color 0.3s ease;">
-          <span style="font-size: 2.5rem; margin-bottom: 12px;">🍰</span>
-          <h3 style="font-size: 1.05rem;">Dessert</h3>
+        <!-- Breakfast Specials -->
+        <a href="recipes.html?category=Breakfast%20Specials" class="category-card reveal-fade-up" data-delay="120">
+          <div class="category-card-bg" style="background-image: url('images/pancakes.png');"></div>
+          <div class="category-card-overlay"></div>
+          <div class="category-card-content">
+            <h3>Breakfast Specials</h3>
+          </div>
         </a>
-        <!-- Burgers -->
-        <a href="recipes.html?category=Burgers" class="category-badge reveal-fade-up" data-delay="250" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; background-color: var(--bg-color); border-radius: 20px; text-align: center; border: 1px solid var(--border-color); transition: transform 0.3s ease, border-color 0.3s ease;">
-          <span style="font-size: 2.5rem; margin-bottom: 12px;">🍔</span>
-          <h3 style="font-size: 1.05rem;">Burgers</h3>
+        <!-- Biryani & Rice -->
+        <a href="recipes.html?category=Biryani%20%26%20Rice" class="category-card reveal-fade-up" data-delay="150">
+          <div class="category-card-bg" style="background-image: url('images/biryani.png');"></div>
+          <div class="category-card-overlay"></div>
+          <div class="category-card-content">
+            <h3>Biryani & Rice</h3>
+          </div>
         </a>
-        <!-- Indian -->
-        <a href="recipes.html?category=Indian" class="category-badge reveal-fade-up" data-delay="300" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; background-color: var(--bg-color); border-radius: 20px; text-align: center; border: 1px solid var(--border-color); transition: transform 0.3s ease, border-color 0.3s ease;">
-          <span style="font-size: 2.5rem; margin-bottom: 12px;">🥘</span>
-          <h3 style="font-size: 1.05rem;">Indian</h3>
+        <!-- Non-Veg Specials -->
+        <a href="recipes.html?category=Non-Veg%20Specials" class="category-card reveal-fade-up" data-delay="180">
+          <div class="category-card-bg" style="background-image: url('images/tikka.jpg');"></div>
+          <div class="category-card-overlay"></div>
+          <div class="category-card-content">
+            <h3>Non-Veg Specials</h3>
+          </div>
+        </a>
+        <!-- Snacks & Street Food -->
+        <a href="recipes.html?category=Snacks%20%26%20Street%20Food" class="category-card reveal-fade-up" data-delay="210">
+          <div class="category-card-bg" style="background-image: url('images/samosas.jpg');"></div>
+          <div class="category-card-overlay"></div>
+          <div class="category-card-content">
+            <h3>Snacks & Street</h3>
+          </div>
+        </a>
+        <!-- Desserts & Sweets -->
+        <a href="recipes.html?category=Desserts%20%26%20Sweets" class="category-card reveal-fade-up" data-delay="240">
+          <div class="category-card-bg" style="background-image: url('https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=400&q=80');"></div>
+          <div class="category-card-overlay"></div>
+          <div class="category-card-content">
+            <h3>Desserts & Sweets</h3>
+          </div>
+        </a>
+        <!-- Drinks & Beverages -->
+        <a href="recipes.html?category=Drinks%20%26%20Beverages" class="category-card reveal-fade-up" data-delay="270">
+          <div class="category-card-bg" style="background-image: url('images/drinks.png');"></div>
+          <div class="category-card-overlay"></div>
+          <div class="category-card-content">
+            <h3>Drinks & Brews</h3>
+          </div>
+        </a>
+        <!-- International Classics -->
+        <a href="recipes.html?category=International%20Classics" class="category-card reveal-fade-up" data-delay="300">
+          <div class="category-card-bg" style="background-image: url('images/pizza.jpg');"></div>
+          <div class="category-card-overlay"></div>
+          <div class="category-card-content">
+            <h3>Global Classics</h3>
+          </div>
         </a>
       </div>
     </div>

@@ -183,6 +183,11 @@
   <script src="js/darkmode.js"></script>
   
   <script>
+    // Redirect if already logged in
+    if (localStorage.getItem('isLoggedIn') === 'true') {
+      window.location.href = 'index.html';
+    }
+
     document.addEventListener('DOMContentLoaded', () => {
       // Mock Login Submit
       const loginForm = document.getElementById('login-form');
@@ -190,6 +195,11 @@
         loginForm.addEventListener('submit', (e) => {
           e.preventDefault();
           const email = document.getElementById('login-email').value;
+          
+          // Save session state
+          localStorage.setItem('isLoggedIn', 'true');
+          localStorage.setItem('userEmail', email);
+          
           showToast(`Logged in successfully as ${email}!`, 'success');
           setTimeout(() => {
             window.location.href = 'index.html';
@@ -198,16 +208,24 @@
       }
 
       // Mock Google Login
-      document.getElementById('google-login').addEventListener('click', () => {
-        showToast('Redirecting to Google Sign-in...', 'info');
-        setTimeout(() => {
-          showToast('Google login complete!', 'success');
+      const googleBtn = document.getElementById('google-login');
+      if (googleBtn) {
+        googleBtn.addEventListener('click', () => {
+          showToast('Redirecting to Google Sign-in...', 'info');
           setTimeout(() => {
-            window.location.href = 'index.html';
-          }, 1000);
-        }, 1500);
-      });
+            // Save session state
+            localStorage.setItem('isLoggedIn', 'true');
+            localStorage.setItem('userEmail', 'google.user@flavorbook.com');
+            
+            showToast('Google login complete!', 'success');
+            setTimeout(() => {
+              window.location.href = 'index.html';
+            }, 1000);
+          }, 1500);
+        });
+      }
     });
+
   </script>
 </body>
 </html>

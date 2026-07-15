@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Hero Image Zoom In
-    gsap.from('.hero-image-container img', {
+    gsap.from('.hero-slider', {
       scale: 0.8,
       opacity: 0,
       duration: 1.2,

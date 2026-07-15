@@ -152,6 +152,12 @@ document.addEventListener('DOMContentLoaded', () => {
   if (currentRecipeId && window.location.pathname.includes('recipe.html')) {
     saveRecentRecipe(currentRecipeId);
   }
+
+  // 8. UPDATE AUTHENTICATION UI
+  updateAuthUI();
+
+  // 9. INITIALIZE HERO SLIDER
+  initHeroSlider();
 });
 
 function saveRecentRecipe(id) {
@@ -167,3 +173,192 @@ function saveRecentRecipe(id) {
   recent = recent.slice(0, 4);
   localStorage.setItem(RECENT_KEY, JSON.stringify(recent));
 }
+
+function updateAuthUI() {
+  const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+  const navMenus = document.querySelectorAll('.nav-menu');
+  
+  navMenus.forEach(menu => {
+    // Look for Login link in header menu
+    const loginLink = menu.querySelector('a[href="login.html"]');
+    if (loginLink) {
+      if (isLoggedIn) {
+        loginLink.innerHTML = '<i class="fa-solid fa-right-from-bracket"></i> Logout';
+        loginLink.href = '#';
+        loginLink.classList.add('logout-trigger');
+        loginLink.onclick = (e) => {
+          e.preventDefault();
+          localStorage.removeItem('isLoggedIn');
+          localStorage.removeItem('userEmail');
+          showToast('Logged out successfully!', 'info');
+          setTimeout(() => {
+            window.location.href = 'index.html';
+          }, 1000);
+        };
+      } else {
+        loginLink.innerHTML = 'Login';
+        loginLink.href = 'login.html';
+        loginLink.classList.remove('logout-trigger');
+        loginLink.onclick = null;
+      }
+    }
+  });
+
+  // Also replace footer link
+  const footerLinks = document.querySelectorAll('.footer-links a[href="login.html"]');
+  footerLinks.forEach(link => {
+    if (isLoggedIn) {
+      link.innerHTML = 'Logout';
+      link.href = '#';
+      link.onclick = (e) => {
+        e.preventDefault();
+        localStorage.removeItem('isLoggedIn');
+        localStorage.removeItem('userEmail');
+        showToast('Logged out successfully!', 'info');
+        setTimeout(() => {
+          window.location.href = 'index.html';
+        }, 1000);
+      };
+    } else {
+      link.innerHTML = 'Login Portal';
+      link.href = 'login.html';
+      link.onclick = null;
+    }
+  });
+}
+
+function initHeroSlider() {
+  const slider = document.querySelector('.hero-slider');
+  if (!slider) return;
+  const slides = slider.querySelectorAll('.slide');
+  if (slides.length <= 1) return;
+  
+  let currentSlide = 0;
+  setInterval(() => {
+    // Fade out current slide
+    slides[currentSlide].classList.remove('active');
+    
+    // Increment slide index
+    currentSlide = (currentSlide + 1) % slides.length;
+    
+    // Fade in next slide
+    slides[currentSlide].classList.add('active');
+  }, 3500);
+}
+// --- QUICK INFO MODAL LOGIC ---
+let recipesDataCache = null;
+
+async function getRecipesData() {
+  if (recipesDataCache) return recipesDataCache;
+  try {
+    const response = await fetch('data/recipes.json');
+    recipesDataCache = await response.json();
+    return recipesDataCache;
+  } catch (error) {
+    console.error('Error loading recipes data:', error);
+    return [];
+  }
+}
+
+async function openQuickInfoModal(recipeId) {
+  const recipes = await getRecipesData();
+  const recipe = recipes.find(r => r.id === parseInt(recipeId));
+  if (!recipe) return;
+  
+  let modal = document.getElementById('quick-info-modal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'quick-info-modal';
+    modal.className = 'quick-info-modal';
+    modal.innerHTML = `
+      <div class="quick-info-backdrop"></div>
+      <div class="quick-info-container">
+        <div class="quick-info-header">
+          <div class="quick-info-header-overlay"></div>
+          <button class="quick-info-close-btn"><i class="fa-solid fa-xmark"></i></button>
+          <div class="quick-info-title-wrap">
+            <span class="quick-info-tag" id="q-tag">Category</span>
+            <h3 class="quick-info-title" id="q-title">Recipe Title</h3>
+          </div>
+        </div>
+        <div class="quick-info-body">
+          <p class="quick-info-desc" id="q-desc">Recipe description...</p>
+          <div class="quick-info-stats-grid">
+            <div class="quick-info-stat-card">
+              <i class="fa-solid fa-fire quick-info-stat-icon"></i>
+              <span class="quick-info-stat-val" id="q-calories">300 kcal</span>
+              <span class="quick-info-stat-label">Calories</span>
+            </div>
+            <div class="quick-info-stat-card">
+              <i class="fa-regular fa-clock quick-info-stat-icon"></i>
+              <span class="quick-info-stat-val" id="q-time">30 Min</span>
+              <span class="quick-info-stat-label">Total Time</span>
+            </div>
+            <div class="quick-info-stat-card">
+              <i class="fa-solid fa-chart-line quick-info-stat-icon"></i>
+              <span class="quick-info-stat-val" id="q-difficulty">Medium</span>
+              <span class="quick-info-stat-label">Difficulty</span>
+            </div>
+          </div>
+          <div class="quick-info-actions">
+            <a href="#" class="quick-info-primary-btn" id="q-view-btn">
+              <i class="fa-solid fa-utensils"></i> View Full Recipe
+            </a>
+          </div>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(modal);
+    
+    modal.querySelector('.quick-info-close-btn').addEventListener('click', () => {
+      modal.classList.remove('active');
+    });
+    modal.querySelector('.quick-info-backdrop').addEventListener('click', () => {
+      modal.classList.remove('active');
+    });
+  }
+  
+  modal.querySelector('.quick-info-header').style.backgroundImage = `url('${recipe.image}')`;
+  modal.querySelector('#q-tag').textContent = recipe.category;
+  modal.querySelector('#q-title').textContent = recipe.title;
+  modal.querySelector('#q-desc').textContent = recipe.description;
+  modal.querySelector('#q-calories').textContent = `${recipe.calories} kcal`;
+  modal.querySelector('#q-time').textContent = `${recipe.prepTime + recipe.cookTime} Min`;
+  modal.querySelector('#q-difficulty').textContent = recipe.difficulty;
+  
+  const viewBtn = modal.querySelector('#q-view-btn');
+  viewBtn.href = `recipe.html?id=${recipe.id}`;
+  
+  modal.classList.add('active');
+}
+
+// Global click delegation for recipe image clicks
+document.addEventListener('click', (e) => {
+  const img = e.target.closest('.card-img-wrapper img');
+  if (img) {
+    const card = img.closest('.recipe-card');
+    if (card) {
+      let recipeId = null;
+      const favBtn = card.querySelector('.card-fav-btn');
+      
+      if (favBtn) {
+        recipeId = favBtn.getAttribute('data-id');
+      } else {
+        const titleLink = card.querySelector('.card-title a');
+        if (titleLink) {
+          const href = titleLink.getAttribute('href');
+          const match = href.match(/id=(\d+)/);
+          if (match) {
+            recipeId = match[1];
+          }
+        }
+      }
+      
+      if (recipeId) {
+        e.preventDefault();
+        e.stopPropagation();
+        openQuickInfoModal(recipeId);
+      }
+    }
+  }
+});
