@@ -29,6 +29,8 @@ function showToast(message, type = 'success') {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Init video modal immediately
+  initHeroVideoModal();
   
   // 1. SIMULATED LOADING SCREEN
   const loader = document.getElementById('loading-screen');
@@ -361,4 +363,59 @@ document.addEventListener('click', (e) => {
       }
     }
   }
+});
+
+// --- HERO WATCH VIDEO MODAL ---
+function initHeroVideoModal() {
+  const watchBtn = document.querySelector('.hero-buttons a[href*="Watch Video"], .hero-buttons a.btn-secondary');
+  if (!watchBtn) return;
+  
+  // Set button class or search specifically
+  watchBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    let videoModal = document.getElementById('hero-video-modal');
+    if (!videoModal) {
+      videoModal = document.createElement('div');
+      videoModal.id = 'hero-video-modal';
+      videoModal.className = 'video-modal';
+      videoModal.innerHTML = `
+        <div class="video-modal-backdrop"></div>
+        <div class="video-modal-container">
+          <button class="video-modal-close"><i class="fa-solid fa-xmark"></i></button>
+          <video id="hero-promo-video" controls autoplay loop playsinline>
+            <source src="images/promo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      `;
+      document.body.appendChild(videoModal);
+      
+      // Close events
+      const closeBtn = videoModal.querySelector('.video-modal-close');
+      const backdrop = videoModal.querySelector('.video-modal-backdrop');
+      const videoEl = videoModal.querySelector('#hero-promo-video');
+      
+      const closeModal = () => {
+        videoModal.classList.remove('active');
+        videoEl.pause();
+        videoEl.currentTime = 0;
+      };
+      
+      closeBtn.addEventListener('click', closeModal);
+      backdrop.addEventListener('click', closeModal);
+    }
+    
+    // Play video on show
+    const videoEl = videoModal.querySelector('#hero-promo-video');
+    videoModal.classList.add('active');
+    videoEl.currentTime = 0;
+    videoEl.play().catch(err => console.log("Auto-play blocked or error: ", err));
+  });
+}
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', () => {
+  initHeroVideoModal();
 });
