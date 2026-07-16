@@ -1265,39 +1265,44 @@
       "carbs": 42
     },
     "ingredients": [
-      "2 cups boiled chickpeas",
-      "2 onions (chopped)",
-      "3 tomatoes (pureed)",
-      "1 tbsp ginger-garlic paste",
-      "2 tbsp Chole masala",
-      "2 tbsp Oil",
+      "2 cups Chickpeas (kabuli chana), soaked overnight",
+      "2 large Onions, finely chopped",
+      "3 tomatoes, pureed",
+      "1 tbsp Ginger-garlic paste",
+      "2 Green chilies, slit",
+      "2 tbsp Chole masala powder",
+      "1 tsp Red chili powder",
+      "1/2 tsp Turmeric powder",
+      "1 tsp Amchur (dry mango) powder",
+      "3 tbsp Cooking oil",
+      "1 tsp Cumin seeds",
       "Salt to taste",
-      "Fresh coriander for garnish"
+      "Fresh coriander leaves, chopped for garnish"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Sauté onions and spices",
-        "description": "Heat oil in a pan. Fry the chopped onions until deep golden brown.",
-        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80"
+        "title": "Boil the Chickpeas",
+        "description": "Drain the soaked chickpeas. Boil them in a pressure cooker with 4 cups of water, a tea bag (for dark color), and a pinch of salt for 5-6 whistles until soft.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 2,
-        "title": "Add ginger-garlic and tomato",
-        "description": "Add ginger-garlic paste, then add tomato puree and cook well until oil separates.",
-        "image": "https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=400&q=80"
+        "title": "Sauté Aromatics",
+        "description": "Heat oil in a deep pan. Add cumin seeds. Add chopped onions and sauté until golden brown. Stir in the ginger-garlic paste and green chilies, and cook for 2 minutes.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 3,
-        "title": "Simmer chickpeas",
-        "description": "Add chole masala, boiled chickpeas, and pour in water. Simmer for 20 minutes.",
-        "image": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=400&q=80"
+        "title": "Cook Tomato Base & Spices",
+        "description": "Pour in the tomato puree. Cook for 5 minutes until oil separates. Add chole masala, red chili powder, turmeric, salt, and amchur powder. Sauté for 1 minute.",
+        "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 4,
-        "title": "Thicken the gravy",
-        "description": "Mash a few chickpeas with the back of your spoon for thickness. Garnish with coriander and serve.",
-        "image": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?auto=format&fit=crop&w=400&q=80"
+        "title": "Simmer the Curry",
+        "description": "Add the boiled chickpeas and the cooking water. Mash a few chickpeas to thicken the gravy. Simmer on medium-low heat for 15 minutes. Garnish with coriander.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -1325,38 +1330,42 @@
       "carbs": 10
     },
     "ingredients": [
-      "250 g paneer, cubed",
-      "2 bunches spinach",
-      "1 onion (chopped)",
-      "2 cloves garlic (minced)",
-      "1 tsp ginger (grated)",
-      "2 tbsp Cream",
+      "250 g Paneer (cottage cheese), cut into cubes",
+      "500 g Fresh spinach (palak) leaves, washed thoroughly",
+      "1 large Onion, finely chopped",
+      "2 tomatoes, chopped",
+      "1 tbsp Ginger-garlic paste",
+      "2 Green chilies",
+      "1/2 tsp Cumin seeds",
+      "1/2 tsp Garam masala powder",
+      "2 tbsp Fresh cream",
+      "2 tbsp Butter or oil",
       "Salt to taste"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Blanch and blend spinach",
-        "description": "Boil spinach for 2 minutes, then plunge in cold water. Blend into a smooth puree.",
-        "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=400&q=80"
+        "title": "Blanch the Spinach",
+        "description": "Boil spinach leaves for 2 minutes, then plunge into ice-cold water to retain green color. Grind into a smooth paste with green chilies.",
+        "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 2,
-        "title": "Sauté the base",
-        "description": "Fry chopped onions, then add garlic and ginger. Sauté until lightly gold.",
-        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80"
+        "title": "Sauté Aromatics",
+        "description": "Heat butter or oil, add cumin seeds, chopped onions and sauté until translucent. Stir in ginger-garlic paste and cook for 2 minutes.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 3,
-        "title": "Build the spinach sauce",
-        "description": "Add spinach puree, salt, and spices. Simmer for 3 minutes on low heat.",
-        "image": "https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=400&q=80"
+        "title": "Combine & Simmer",
+        "description": "Add chopped tomatoes, cook until mushy. Add the spinach paste, salt, and a little water. Simmer on low heat for 5 minutes.",
+        "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 4,
-        "title": "Cook with paneer",
-        "description": "Add paneer cubes and cook for 5 minutes. Stir in cream and serve hot.",
-        "image": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?auto=format&fit=crop&w=400&q=80"
+        "title": "Add Paneer & Cream",
+        "description": "Add paneer cubes and garam masala. Gently simmer for 3 minutes. Stir in fresh cream, cook for 1 minute, and turn off heat.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -1384,31 +1393,36 @@
       "carbs": 54
     },
     "ingredients": [
-      "Kidney beans (rajma, soaked overnight)",
-      "1 Onion (chopped)",
-      "2 Tomatoes (pureed)",
+      "1 cup Kidney beans (Rajma), soaked overnight",
+      "1 large Onion, finely chopped",
+      "2 tomatoes, pureed",
       "1 tbsp Ginger-garlic paste",
-      "2 tbsp Rajma masala",
+      "1 tsp Kashmiri red chili powder",
+      "1/2 tsp Turmeric powder",
+      "1 tsp Coriander powder",
+      "1/2 tsp Garam masala powder",
+      "2 tbsp Ghee or oil",
+      "1 tsp Cumin seeds",
       "Salt to taste"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Pressure cook rajma",
-        "description": "Pressure cook soaked kidney beans until tender. Set aside.",
-        "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=400&q=80"
+        "title": "Boil Rajma",
+        "description": "Boil soaked kidney beans in a pressure cooker with 4 cups of water and salt for 6-8 whistles until completely soft.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 2,
-        "title": "Build the gravy base",
-        "description": "Fry chopped onions, then add ginger-garlic paste and tomato puree. Cook until oil separates.",
-        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80"
+        "title": "Sauté Aromatics",
+        "description": "Heat ghee, add cumin seeds, chopped onions, and sauté until golden. Add ginger-garlic paste and cook for 2 mins.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 3,
-        "title": "Simmer beans in gravy",
-        "description": "Add rajma masala and salt. Add kidney beans along with water and simmer for 20 minutes. Serve with hot rice.",
-        "image": "https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=400&q=80"
+        "title": "Cook Gravy & Simmer",
+        "description": "Add tomato puree, cook until ghee separates. Add spices, boiled rajma, and water. Simmer for 15 minutes, mashing some beans to thicken. Stir in garam masala.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -1436,30 +1450,36 @@
       "carbs": 48
     },
     "ingredients": [
-      "dosa batter (fermented)",
-      "potato filling",
-      "oil or ghee",
-      "1 tsp mustard seeds",
-      "curry leaves"
+      "2 cups Rice, soaked for 5 hours",
+      "1/2 cup Urad dal (black gram), soaked for 5 hours",
+      "1/2 tsp Fenugreek seeds (methi)",
+      "3 large Potatoes, boiled and mashed",
+      "1 large Onion, sliced",
+      "2 Green chilies, chopped",
+      "1/2 tsp Mustard seeds",
+      "10-12 Curry leaves",
+      "1/2 tsp Turmeric powder",
+      "Oil or butter for cooking",
+      "Salt to taste"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Spread the batter",
-        "description": "Heat a flat dosa pan. Spread dosa batter thinly in circular spirals. Drizzle oil and cook until crisp.",
-        "image": "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=400&q=80"
+        "title": "Prepare Batter",
+        "description": "Grind soaked rice, urad dal, and fenugreek seeds into a smooth batter. Mix in salt and ferment overnight (8-10 hours).",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 2,
-        "title": "Assemble potatoes",
-        "description": "Add seasoned potato filling in the center of the crispy crepe.",
-        "image": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=400&q=80"
+        "title": "Prepare Potato Bhaji",
+        "description": "Heat oil, splutter mustard seeds, add curry leaves, green chilies, and onions. Sauté. Add turmeric, salt, mashed potatoes, and mix well.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 3,
-        "title": "Fold and serve",
-        "description": "Fold the dosa neatly. Serve hot with coconut chutney and tasty sambar.",
-        "image": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=400&q=80"
+        "title": "Cook Dosa & Assemble",
+        "description": "Spread a ladle of batter in a thin circle on a hot tawa. Drizzle oil/butter, cook until crisp and golden. Place potato filling in the center and fold.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -1487,28 +1507,30 @@
       "carbs": 32
     },
     "ingredients": [
-      "Idli batter (fermented)",
-      "Oil (for greasing stand)",
-      "Sambar & Chutneys for serving"
+      "2 cups Idli Rice (parboiled rice), soaked for 5 hours",
+      "1/2 cup Urad dal (whole skinless black gram), soaked for 5 hours",
+      "1 tsp Fenugreek seeds (methi)",
+      "Salt to taste",
+      "Water for grinding"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Pour batter into moulds",
-        "description": "Grease idli moulds. Pour fermented batter into each mould compartment.",
-        "image": "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=400&q=80"
+        "title": "Grind & Ferment Batter",
+        "description": "Grind urad dal and fenugreek seeds into a fluffy batter. Grind rice coarsely. Combine, add salt, and ferment in a warm place for 8-12 hours.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 2,
-        "title": "Steam cook idlis",
-        "description": "Steam in an idli cooker for 12 minutes until cooked and puffy. Cool slightly and remove idlis.",
-        "image": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=400&q=80"
+        "title": "Steam the Idlis",
+        "description": "Grease idli plates with oil. Pour batter into molds and steam in a cooker (without whistle) or steamer for 10-12 minutes.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 3,
-        "title": "Garnish and enjoy",
-        "description": "Serve hot. Enjoy with warm sambar and fresh coconut chutney.",
-        "image": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=400&q=80"
+        "title": "De-mold and Serve",
+        "description": "Let idlis cool for 2 minutes. De-mold with a wet spoon and serve warm with sambar and coconut chutney.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -1536,32 +1558,35 @@
       "carbs": 70
     },
     "ingredients": [
-      "2 cups basmati rice",
-      "500 g chicken pieces",
-      "yogurt",
-      "fried onions",
-      "mint & coriander",
-      "Biryani masala",
-      "ghee"
+      "500 g Chicken, cut into medium pieces",
+      "2 cups Basmati rice, washed and soaked for 30 minutes",
+      "2 large Onions, sliced thinly and deep-fried (biryani onions)",
+      "1/2 cup Yogurt",
+      "1 tbsp Ginger-garlic paste",
+      "2 tsp Biryani masala powder",
+      "1/2 cup Fresh mint and coriander leaves, chopped",
+      "4 tbsp Ghee or oil",
+      "Whole spices (bay leaf, cardamom, cloves, cinnamon)",
+      "Salt to taste"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Marinate the chicken",
-        "description": "Marinate chicken in yogurt, garam masala, and spices. Boil basmati rice until 70% done.",
-        "image": "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=400&q=80"
+        "title": "Marinate Chicken",
+        "description": "Marinate chicken with yogurt, ginger-garlic paste, biryani masala, half of the fried onions, mint, coriander, oil, and salt for 1 hour.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 2,
-        "title": "Layer rice and masala",
-        "description": "Prepare chicken masala. Layer rice, chicken, fried onions, fresh mint, and coriander in a pot.",
-        "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=400&q=80"
+        "title": "Boil Basmati Rice",
+        "description": "Boil water with whole spices and salt. Add soaked rice and cook until 70% done. Drain and set aside.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 3,
-        "title": "Dum cook",
-        "description": "Drizzle ghee and saffron milk over top layer. Cover tightly, cook on low heat for 30 minutes.",
-        "image": "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=400&q=80"
+        "title": "Layer and Dum Cook",
+        "description": "In a heavy-bottomed pot, place the marinated chicken. Layer the partially cooked rice on top. Garnish with remaining fried onions, ghee, mint, and saffron. Cover tightly and cook on low heat (dum) for 25-30 minutes.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/WJ69S0t7Ego",
@@ -1589,30 +1614,36 @@
       "carbs": 34
     },
     "ingredients": [
-      "Flour (maida)",
-      "Potatoes (boiled & mashed)",
-      "Peas",
-      "spices (cumin, chili, coriander)",
-      "oil for deep frying"
+      "2 cups Maida (all-purpose flour) for the dough",
+      "4 tbsp Ghee or oil for shortening",
+      "1/2 tsp Carom seeds (ajwain)",
+      "3 large Potatoes, boiled, peeled, and crumbled",
+      "1/2 cup Green peas, boiled",
+      "1 tsp Ginger, finely chopped",
+      "2 Green chilies, chopped",
+      "1 tsp Coriander powder",
+      "1/2 tsp Garam masala",
+      "Oil for deep frying",
+      "Salt to taste"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Knead pastry dough",
-        "description": "Make dough with flour, salt, carom seeds, oil, and water. Rest for 20 minutes.",
-        "image": "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=400&q=80"
+        "title": "Knead Samosa Crust Dough",
+        "description": "Mix flour, ajwain, salt, and ghee. Knead with cold water into a stiff dough. Cover and rest for 30 minutes.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 2,
-        "title": "Prepare potato filling",
-        "description": "Sauté mashed potatoes, peas, and spices in a pan. Let cool.",
-        "image": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=400&q=80"
+        "title": "Prepare Potato Stuffing",
+        "description": "Heat oil, sauté ginger and green chilies. Add peas, crumbled potatoes, spices, and salt. Cook for 5 minutes, then let cool.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 3,
-        "title": "Shape and fry",
-        "description": "Roll dough, cut into halves, form cones, fill with potato mixture, seal edges, and deep fry until golden.",
-        "image": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=400&q=80"
+        "title": "Shape & Deep Fry",
+        "description": "Divide dough into balls. Roll thin, cut in half. Fold into cones, fill with potato mixture, seal edges with water, and deep fry in low-medium oil until golden brown.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -1640,31 +1671,32 @@
       "carbs": 55
     },
     "ingredients": [
-      "Milk powder",
-      "Flour",
-      "Baking powder",
-      "Ghee",
-      "Sugar & Water (for syrup)",
-      "Cardamom"
+      "1 cup Khoya (mawa) or Milk Powder",
+      "2 tbsp All-purpose flour (maida)",
+      "1/4 tsp Baking powder",
+      "2 cups Sugar (for syrup)",
+      "2 cups Water",
+      "4-5 Cardamom pods, crushed",
+      "Ghee or oil for deep frying"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Prepare cardamom syrup",
-        "description": "Boil sugar and water with cardamoms for 10 minutes to prepare sugar syrup.",
-        "image": "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=400&q=80"
+        "title": "Prepare Sugar Syrup",
+        "description": "Boil sugar and water with cardamoms for 5-8 minutes until sticky. Keep warm.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 2,
-        "title": "Knead gulab jamun dough",
-        "description": "Mix milk powder, flour, baking powder, ghee, and milk. Knead into a soft dough and make smooth balls.",
-        "image": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=400&q=80"
+        "title": "Make Jamun Balls",
+        "description": "Mash khoya, flour, and baking powder together with a little milk to form a soft, smooth dough. Shape into small, crack-free balls.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 3,
-        "title": "Fry and soak",
-        "description": "Fry balls on low heat until golden. Soak in warm syrup and rest for 2 hours.",
-        "image": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=400&q=80"
+        "title": "Fry and Soak",
+        "description": "Fry balls on very low heat in ghee until dark golden brown. Drain and transfer immediately into warm sugar syrup. Soak for 2 hours before serving.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/nryp5-P1b-g",
@@ -1754,33 +1786,35 @@
       "carbs": 35
     },
     "ingredients": [
-      "1 cup semolina (sooji)",
-      "2 cups water",
-      "1 onion (chopped)",
-      "2 green chilies (chopped)",
-      "1 tsp mustard seeds",
-      "Curry leaves",
-      "2 tbsp oil or ghee",
-      "Salt to taste"
+      "1 cup Semolina (Rava/Sooji)",
+      "2.5 cups Water",
+      "1 medium Onion, chopped",
+      "2 Green chilies, chopped",
+      "1/2 tsp Mustard seeds",
+      "1 tsp Split black gram (urad dal)",
+      "10-12 Curry leaves",
+      "2 tbsp Cooking oil",
+      "Salt to taste",
+      "Coriander leaves for garnish"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Roast semolina",
-        "description": "Dry roast semolina in a heavy-bottomed pan on low heat until aromatic. Keep aside.",
-        "image": "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=400&q=80"
+        "title": "Dry Roast Semolina",
+        "description": "Dry roast semolina on medium heat until fragrant, stirring continuously. Keep aside.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 2,
-        "title": "Prepare seasoning",
-        "description": "Heat oil in a pan. Add mustard seeds, curry leaves, chopped onions, and chilies. Sauté until onions soften.",
-        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80"
+        "title": "Sauté Spices & Aromatics",
+        "description": "Heat oil in a pan. Splutter mustard seeds, then add urad dal, curry leaves, green chilies, and onions. Sauté until translucent.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 3,
-        "title": "Simmer water and combine",
-        "description": "Pour in water, add salt, and bring to a boil. Reduce heat and add semolina slowly while stirring continuously to avoid lumps. Cook until thick.",
-        "image": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=400&q=80"
+        "title": "Boil Water & Stir",
+        "description": "Pour in water, add salt, and bring to a boil. Reduce heat, add roasted semolina slowly in a stream while stirring constantly to avoid lumps. Cover and cook on low for 3 minutes. Garnish with coriander.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -1808,31 +1842,32 @@
       "carbs": 28
     },
     "ingredients": [
-      "1 cup urad dal (black lentils)",
-      "1 tsp ginger (grated)",
-      "1 green chili (chopped)",
-      "Curry leaves",
-      "Salt to taste",
-      "Oil for deep frying"
+      "1 cup Urad Dal (split skinless black gram), soaked for 4 hours",
+      "1 inch Ginger, finely chopped",
+      "2 Green chilies, finely chopped",
+      "10-12 Curry leaves, chopped",
+      "A pinch of Asafoetida (hing)",
+      "Oil for deep frying",
+      "Salt to taste"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Soak and grind dal",
-        "description": "Soak urad dal for 4 hours. Grind into a thick, fluffy batter using minimal water. Mix in ginger, chili, curry leaves, and salt.",
-        "image": "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=400&q=80"
+        "title": "Grind Urad Dal",
+        "description": "Drain soaked urad dal completely. Grind into a very thick, fluffy batter using minimal ice-cold water.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 2,
-        "title": "Shape and deep fry",
-        "description": "Wet your hands. Take a portion of batter, shape it like a doughnut with a hole in the center, and slip gently into hot oil.",
-        "image": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=400&q=80"
+        "title": "Aerate & Spice Batter",
+        "description": "Beat the batter vigorously with your hands for 5 minutes to incorporate air. Add ginger, chilies, curry leaves, salt, and hing. Mix well.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 3,
-        "title": "Drain and serve",
-        "description": "Fry until golden brown and crispy. Drain excess oil and serve hot with sambar and coconut chutney.",
-        "image": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?auto=format&fit=crop&w=400&q=80"
+        "title": "Shape & Deep Fry",
+        "description": "Wet your hands. Take a ball of batter, shape it, make a hole in the center, and drop it into hot oil. Fry on medium heat until golden brown and crispy. Drain and serve.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -1860,33 +1895,36 @@
       "carbs": 52
     },
     "ingredients": [
-      "Mixed vegetables (cauliflower, peas, carrots)",
-      "3 Potatoes (boiled)",
-      "2 Tomatoes (pureed)",
-      "1 Onion (chopped)",
+      "3 large Potatoes, boiled and peeled",
+      "1 cup Cauliflower florets, boiled",
+      "1/2 cup Green peas, boiled",
+      "2 large Onions, finely chopped",
+      "3 large Tomatoes, finely chopped",
+      "1 tbsp Ginger-garlic paste",
+      "2 tbsp Pav Bhaji masala",
       "4 tbsp Butter",
-      "2 tbsp Pav bhaji masala",
-      "Pav buns",
-      "Fresh coriander & lemon wedges"
+      "Lemon wedges & Coriander leaves",
+      "10 Pav buns",
+      "Salt to taste"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Boil and mash vegetables",
-        "description": "Boil mixed vegetables and potatoes in a cooker. Mash them completely into a smooth mixture.",
-        "image": "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=400&q=80"
+        "title": "Mash Vegetables",
+        "description": "Mash the boiled potatoes, cauliflower, and peas together with a vegetable masher until smooth.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 2,
-        "title": "Build butter gravy base",
-        "description": "Cook chopped onions in butter until golden. Add tomatoes, pav bhaji masala, salt, and the mashed vegetables.",
-        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80"
+        "title": "Prepare Spicy Bhaji",
+        "description": "Heat 2 tbsp butter in a pan. Sauté onions and ginger-garlic paste. Add tomatoes and cook until soft. Add pav bhaji masala, salt, and the mashed vegetables. Add water, cook for 10 minutes, and mash further. Stir in coriander and remaining butter.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 3,
-        "title": "Simmer and toast buns",
-        "description": "Simmer the bhaji for 10 minutes on medium heat. Toast pav buns on a hot tawa with a slab of butter. Garnish bhaji with coriander and serve with lemon.",
-        "image": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?auto=format&fit=crop&w=400&q=80"
+        "title": "Toast Pav Buns",
+        "description": "Slit pav buns. Melt butter on a hot tawa with a pinch of pav bhaji masala. Toast pav buns on both sides until warm and golden. Serve hot with bhaji and lemon.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -1914,24 +1952,34 @@
       "carbs": 40
     },
     "ingredients": [
-      "Potato mixture (spiced)",
-      "Gram flour batter (besan)",
-      "Pav buns",
-      "Garlic chutney",
-      "Oil for deep frying"
+      "4 large Potatoes, boiled and mashed",
+      "1.5 cups Gram flour (besan) for batter",
+      "2 Green chilies and 4 garlic cloves (pounded into paste)",
+      "1/2 tsp Mustard seeds",
+      "1/2 tsp Turmeric powder",
+      "6 Pav buns",
+      "Sweet tamarind & garlic chutneys",
+      "Oil for deep frying",
+      "Salt to taste"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Prepare potato fritters",
-        "description": "Roll spiced potato mixture into balls. Dip in a thick gram flour batter and deep fry until crispy and golden.",
-        "image": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=400&q=80"
+        "title": "Make Potato Filling",
+        "description": "Heat oil, splutter mustard seeds, add curry leaves, green chili-garlic paste, and turmeric. Stir into mashed potatoes with salt. Shape into round balls.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 2,
+        "title": "Batter & Deep Fry",
+        "description": "Prepare a thick batter of besan, water, salt, and turmeric. Dip potato balls into the batter and deep-fry in hot oil until golden.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
         "title": "Assemble Vada Pav",
-        "description": "Slice the pav buns. Spread garlic dry chutney, place the potato fritter inside, and serve hot.",
-        "image": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?auto=format&fit=crop&w=400&q=80"
+        "description": "Slit pav buns, spread green/garlic chutneys inside, insert hot potato vada, and serve immediately.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -1959,31 +2007,32 @@
       "carbs": 44
     },
     "ingredients": [
-      "Wheat flour",
-      "Boiled potatoes (mashed)",
-      "Green chili (chopped)",
-      "Fresh coriander",
-      "1/2 tsp Garam masala",
-      "Ghee for frying"
+      "2 cups Whole wheat flour (atta)",
+      "3 large Potatoes, boiled, peeled, and mashed",
+      "2 Green chilies, finely chopped",
+      "1/2 tsp Carom seeds (ajwain)",
+      "1/2 tsp Garam masala powder",
+      "Ghee or oil for cooking",
+      "Salt to taste"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Prepare dough and stuffing",
-        "description": "Make dough with wheat flour. Mix potatoes with green chili, coriander, garam masala, and salt.",
-        "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=400&q=80"
+        "title": "Knead Whole Wheat Dough",
+        "description": "Knead wheat flour, salt, and water into a soft, smooth dough. Cover and rest for 20 minutes.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 2,
-        "title": "Assemble and roll paratha",
-        "description": "Roll out a portion of dough, place a scoop of potato stuffing, seal, and roll again into a flatbread.",
-        "image": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=400&q=80"
+        "title": "Prepare Potato Stuffing",
+        "description": "Mix mashed potatoes, chopped green chilies, ajwain, garam masala, and salt together thoroughly.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 3,
-        "title": "Cook on tawa skillet",
-        "description": "Cook on a hot tawa. Apply ghee, cook both sides until golden spots appear. Serve with yogurt and pickles.",
-        "image": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=400&q=80"
+        "title": "Stuff, Roll, and Roast",
+        "description": "Roll a small ball of dough, place potato stuffing inside, seal the edges, and roll flat. Roast on a hot tawa with ghee on both sides until golden brown.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -2011,24 +2060,42 @@
       "carbs": 26
     },
     "ingredients": [
-      "4 Capsicums (bell peppers)",
-      "3 Potatoes (boiled & mashed)",
-      "1/2 cup Green peas",
-      "Indian dry spices",
-      "2 tbsp Oil"
+      "4 medium Green bell peppers (capsicum), washed and dried",
+      "3 large Potatoes, boiled, peeled, and mashed",
+      "1 small Onion, finely chopped",
+      "1 tsp Ginger-garlic paste",
+      "1/2 tsp Turmeric powder",
+      "1 tsp Red chili powder",
+      "1 tsp Coriander-cumin powder",
+      "1/2 tsp Amchur (dry mango) powder",
+      "2 tbsp Finely chopped coriander leaves",
+      "3 tbsp Cooking oil",
+      "Salt to taste"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Prepare potato filling",
-        "description": "Sauté mashed potatoes, peas, and spices in a pan. Cut the tops off the bell peppers, clean the seeds, and stuff tightly.",
-        "image": "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=400&q=80"
+        "title": "Prepare Capsicum Caps",
+        "description": "Carefully cut off the top stalk of each capsicum. Remove the seeds and white ribs inside to create a hollow cavity for the stuffing. Keep the top caps for baking/cooking.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 2,
-        "title": "Cook capsicum",
-        "description": "Heat oil in a pan, arrange capsicums, cover, and cook on low heat. Turn occasionally until tender.",
-        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80"
+        "title": "Cook the Potato Stuffing",
+        "description": "Heat 1 tbsp oil in a pan. Sauté chopped onions and ginger-garlic paste until soft. Add turmeric, chili powder, coriander-cumin powder, amchur, and salt. Stir in the mashed potatoes and coriander leaves. Cook for 3 minutes, then remove and let cool.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Stuff the Peppers",
+        "description": "Stuff the spiced potato mixture tightly into the hollow capsicum cavities. Press it down with a spoon so it is fully packed.",
+        "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 4,
+        "title": "Pan-Sear and Roast",
+        "description": "Heat 2 tbsp oil in a deep frying pan or kadai. Place the stuffed capsicum upright. Cover and cook on low heat for 15-20 minutes, rotating them occasionally so that all sides get tender, slightly blistered, and cooked.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -2056,26 +2123,43 @@
       "carbs": 18
     },
     "ingredients": [
-      "1 large Eggplant (baingan)",
-      "1 Onion (chopped)",
-      "2 Tomatoes (chopped)",
-      "4 cloves Garlic (minced)",
-      "2 Green chilies",
-      "2 tbsp Oil",
-      "Salt to taste"
+      "1 large Eggplant (bharta baingan)",
+      "2 tbsp Mustard oil",
+      "1 large Onion, finely chopped",
+      "2 medium Tomatoes, finely chopped",
+      "1 tbsp Ginger, finely chopped",
+      "3 cloves Garlic, minced",
+      "2 Green chilies, finely chopped",
+      "1/2 tsp Turmeric powder",
+      "1 tsp Kashmiri red chili powder",
+      "1/2 tsp Garam masala powder",
+      "Salt to taste",
+      "2 tbsp Fresh coriander leaves, chopped"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Roast and mash eggplant",
-        "description": "Roast the eggplant directly over an open flame until charred. Peel the skin and mash the pulp.",
-        "image": "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=400&q=80"
+        "title": "Roast the Eggplant",
+        "description": "Wash eggplant. Make 3-4 deep vertical slits and insert garlic cloves into them. Brush with mustard oil. Roast directly over a gas flame, turning frequently, until the skin chars, wrinkles, and the flesh becomes soft (approx. 10-12 minutes).",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 2,
-        "title": "Cook with aromatics",
-        "description": "Cook chopped onions, garlic, and tomatoes. Add mashed eggplant, spices, cook for 10 minutes, and serve hot.",
-        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80"
+        "title": "Peel and Mash",
+        "description": "Let the roasted eggplant cool in a closed bowl. Peel off the charred skin. Mash the roasted flesh thoroughly with a fork, discarding the stem.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Sauté Spices",
+        "description": "Heat mustard oil in a pan. Sauté chopped onions, ginger, and green chilies. Fry until golden. Add chopped tomatoes, turmeric, red chili powder, and salt. Cook until tomatoes are completely mushy.",
+        "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 4,
+        "title": "Cook Bharta",
+        "description": "Add the mashed eggplant to the pan. Mix well and cook on medium-low heat, stirring constantly for 7-8 minutes. Stir in garam masala and garnish with fresh coriander. Serve hot with rotis.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -2103,24 +2187,40 @@
       "carbs": 14
     },
     "ingredients": [
-      "Okra (bhindi, dry)",
-      "1 Onion (sliced)",
-      "1 Tomato (chopped)",
-      "Turmeric & Coriander powder",
-      "2 tbsp Oil"
+      "250 g Okra (bhindi), washed, dried completely, and cut into 1-inch pieces",
+      "2 large Onions, sliced thinly",
+      "1/2 tsp Turmeric powder",
+      "1 tsp Coriander powder",
+      "1/2 tsp Dry mango (amchur) powder",
+      "1 tsp Red chili powder",
+      "1/2 tsp Cumin seeds",
+      "2 tbsp Cooking oil",
+      "Salt to taste"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Prep and fry bhindi",
-        "description": "Slice clean dry okra. Fry okra until slightly tender and set aside.",
-        "image": "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=400&q=80"
+        "title": "Prep and Roast Bhindi",
+        "description": "Heat 1 tbsp oil in a wide pan. Add okra (bhindi) and cook on medium heat, stirring occasionally, for 8-10 minutes until they are dry, lightly browned, and non-sticky. Remove okra from pan.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 2,
-        "title": "Toss and finish cooking",
-        "description": "Cook onions and tomatoes. Add spices, fold in okra, cook for 5 minutes, garnish, and serve.",
-        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80"
+        "title": "Temper & Cook Onions",
+        "description": "Add another 1 tbsp oil to the same pan. Add cumin seeds. Sauté sliced onions until soft and golden brown.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Combine Spices",
+        "description": "Reduce heat, add turmeric, coriander powder, red chili powder, amchur powder, and salt. Stir well for 1 minute.",
+        "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 4,
+        "title": "Final Okra Toss",
+        "description": "Add the roasted okra back to the pan. Mix gently to coat with spices. Cook uncovered on low heat for 5-7 minutes. Serve hot.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -2148,17 +2248,31 @@
       "carbs": 38
     },
     "ingredients": [
-      "2 cups Basmati rice (cooked)",
-      "2 tsp Cumin seeds (jeera)",
-      "2 tbsp Ghee",
-      "Salt to taste"
+      "1 cup Basmati Rice, washed and soaked for 20 minutes",
+      "1.5 tbsp Cumin seeds (jeera)",
+      "2 tbsp Ghee or butter",
+      "2 cups Water",
+      "Salt to taste",
+      "1 tbsp Chopped coriander leaves"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Tamper cumin in ghee",
-        "description": "Heat ghee in a pan. Add cumin seeds and let them sizzle. Pour cumin ghee over cooked rice, add salt, mix gently, and serve.",
-        "image": "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=400&q=80"
+        "title": "Toast Cumin Seeds",
+        "description": "Melt ghee or butter in a pot on medium heat. Add cumin seeds and let them sizzle and toast until dark brown and aromatic.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 2,
+        "title": "Sauté Rice",
+        "description": "Drain the soaked basmati rice. Add it to the pot and gently sauté for 1-2 minutes, coating the grains with ghee without breaking them.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Simmer & Fluff",
+        "description": "Add 2 cups of water and salt. Bring to a boil, then cover with a tight lid and cook on low heat for 10-12 minutes until all water is absorbed. Let stand for 5 minutes, fluff with a fork, and garnish with coriander.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/WJ69S0t7Ego",
@@ -2186,25 +2300,34 @@
       "carbs": 40
     },
     "ingredients": [
-      "Rice (cooked)",
-      "juice of 1 Lemon",
+      "2 cups Cooked basmati rice (completely cooled)",
+      "3 tbsp Lemon juice",
       "1 tsp Mustard seeds",
-      "Curry leaves",
-      "1/4 cup Peanuts",
-      "1/2 tsp Turmeric"
+      "1 tsp Split chickpea (chana dal)",
+      "1/2 cup Raw peanuts",
+      "1/2 tsp Turmeric powder",
+      "2 Green chilies, chopped",
+      "2 tbsp Cooking oil & 10-12 curry leaves",
+      "Salt to taste"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Sauté seasoning",
-        "description": "Heat oil. Add mustard seeds, peanuts, curry leaves, and turmeric. Roast peanuts until crunchy.",
-        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80"
+        "title": "Temper Spices & Peanuts",
+        "description": "Heat oil in a pan. Add mustard seeds. Once they splutter, add chana dal, peanuts, and curry leaves. Roast on low-medium heat until the peanuts are crunchy and golden.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 2,
-        "title": "Combine with lemon juice",
-        "description": "Add cooked rice, mix well, stir in fresh lemon juice gently, and serve cold or warm.",
-        "image": "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=400&q=80"
+        "title": "Add Turmeric & Aromatics",
+        "description": "Add chopped green chilies, turmeric powder, and salt. Stir for 30 seconds on low heat, then remove from flame.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Mix Rice & Lemon",
+        "description": "Add lemon juice to the pan, then add the cooled cooked rice. Gently mix until the rice is evenly coated in a bright yellow color. Serve warm.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/WJ69S0t7Ego",
@@ -2232,17 +2355,32 @@
       "carbs": 42
     },
     "ingredients": [
-      "Rice (cooked)",
-      "1/2 cup Tamarind pulp",
-      "Peanuts",
-      "Curry leaves & Mustard seeds"
+      "2 cups Cooked basmati rice (completely cooled)",
+      "1/4 cup Tamarind paste",
+      "2 tbsp Puliyogare spice mix",
+      "1 tsp Mustard seeds",
+      "1/2 cup Raw peanuts",
+      "2 tbsp Oil & 10-12 curry leaves",
+      "Salt to taste"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Cook tamarind paste",
-        "description": "Prepare tamarind sauce. Heat oil, fry peanuts, mustard seeds, and curry leaves. Mix sauce, add rice, mix well, and serve.",
-        "image": "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=400&q=80"
+        "title": "Prepare Tamarind Reduction",
+        "description": "In a small pan, simmer tamarind paste with 1/2 cup water, puliyogare spice mix, and salt for 5 minutes until it thickens into a paste.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 2,
+        "title": "Temper Crunchy Toppings",
+        "description": "Heat oil in another pan. Sauté mustard seeds, peanuts, and curry leaves until peanuts are roasted and crunchy.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Toss and Blend Rice",
+        "description": "Add the tamarind reduction and tempered crunchy ingredients into the cooled cooked rice. Mix thoroughly until the rice is aromatic and deep brownish-red.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/WJ69S0t7Ego",
@@ -2270,18 +2408,31 @@
       "carbs": 56
     },
     "ingredients": [
-      "1.5 cups Rice",
-      "Mixed vegetables (beans, peas, carrots)",
-      "1 Onion (sliced)",
-      "Whole spices",
-      "2 tbsp Ghee"
+      "1 cup Basmati Rice, washed and soaked for 20 minutes",
+      "1 cup Mixed chopped vegetables (beans, carrots, peas, corn)",
+      "Whole spices (1 bay leaf, 3 cloves, 2 cardamom, 1 cinnamon stick)",
+      "2 tbsp Ghee or oil",
+      "2 cups Water",
+      "Salt to taste"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Sauté rice and spices",
-        "description": "Heat ghee, add whole spices, cook sliced onions, then add vegetables, rice, pour water, and cook until done.",
-        "image": "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=400&q=80"
+        "title": "Sauté Whole Spices",
+        "description": "Heat ghee or oil in a heavy-bottomed pot. Add bay leaf, cloves, cardamom, and cinnamon. Sauté for 1 minute until fragrant.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 2,
+        "title": "Add Veggies & Rice",
+        "description": "Add the mixed vegetables and sauté for 2 minutes. Drain rice, add to the pot, and stir gently to toast for 1 minute.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Simmer Pulao",
+        "description": "Pour in 2 cups of water and add salt. Bring to a boil, then cover tightly and simmer on low heat for 10-12 minutes until cooked and grains are fluffy.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/WJ69S0t7Ego",
@@ -2309,24 +2460,32 @@
       "carbs": 48
     },
     "ingredients": [
-      "Cooked rice (cold)",
-      "Carrots, beans & capsicum (finely chopped)",
-      "Spring onion",
-      "Soy sauce & Pepper",
-      "Oil for frying"
+      "2 cups Cooked basmati rice (completely cooled)",
+      "1 cup Finely chopped vegetables (carrot, beans, capsicum, cabbage)",
+      "1.5 tbsp Soy sauce & 1 tsp black pepper powder",
+      "2 spring onions, chopped",
+      "2 tbsp Cooking oil",
+      "Salt to taste",
+      "1 tsp Vinegar"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Wok fry veggies",
-        "description": "Heat oil in a wok. Stir-fry the vegetables for 3-4 minutes. Add spring onions, soy sauce, and black pepper.",
-        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80"
+        "title": "Stir Fry Veggies",
+        "description": "Heat oil in a wok on high heat. Add chopped vegetables and stir-fry rapidly for 3 minutes until tender-crisp.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 2,
-        "title": "Toss with cold rice",
-        "description": "Add cold cooked rice, toss everything together gently, cook for 2-3 minutes, and garnish with spring onion greens.",
-        "image": "https://images.unsplash.com/photo-1559314809-0d155014e29e?auto=format&fit=crop&w=800&q=80"
+        "title": "Season with Sauces",
+        "description": "Add soy sauce, vinegar, black pepper, and salt. Stir-fry for 30 seconds on high heat.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Toss Cooked Rice",
+        "description": "Add the cooled cooked rice and spring onions. Toss gently on high heat for 2 minutes and serve hot.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/n4p3vJ-zZ04",
@@ -2354,26 +2513,40 @@
       "carbs": 10
     },
     "ingredients": [
-      "500 g chicken pieces",
-      "2 onions (chopped)",
-      "2 tomatoes (chopped)",
-      "1 tbsp ginger-garlic paste",
-      "2 tsp chicken masala",
-      "3 tbsp Oil",
-      "Salt to taste"
+      "500 g Chicken, cut into curry pieces",
+      "2 large Onions, finely chopped",
+      "2 large Tomatoes, pureed",
+      "1 tbsp Ginger-garlic paste",
+      "2 tsp Chicken curry masala powder",
+      "2 tbsp Cooking oil",
+      "Salt to taste",
+      "Chopped coriander leaves for garnish",
+      "1/2 tsp Turmeric & 1 tsp Kashmiri red chili powder"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Sauté base aromatics",
-        "description": "Heat oil in a pot. Fry chopped onions until deep golden brown. Add ginger-garlic paste and cook for 2 minutes.",
-        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80"
+        "title": "Sauté Onions & Aromatics",
+        "description": "Heat oil in a pot, fry chopped onions until golden brown. Stir in ginger-garlic paste and cook for 2 minutes.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 2,
-        "title": "Add tomatoes and chicken",
-        "description": "Add tomatoes and chicken masala. Mix in chicken, cook for 10 minutes until chicken is seared. Pour in water, cover, and simmer for 30 minutes until chicken is tender.",
-        "image": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=400&q=80"
+        "title": "Cook Gravy Base",
+        "description": "Add tomato puree, chicken masala, turmeric, red chili powder, and salt. Sauté on medium heat until the masala thickens and oil starts separating.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Sear Chicken",
+        "description": "Add chicken curry pieces. Sauté on high heat for 5 minutes, coating the chicken with the spices.",
+        "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 4,
+        "title": "Simmer to Tender",
+        "description": "Pour in 1.5 cups of warm water. Cover and simmer on low-medium heat for 25-30 minutes until chicken is completely tender. Garnish with coriander.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -2401,26 +2574,39 @@
       "carbs": 8
     },
     "ingredients": [
-      "500 g fish pieces",
-      "1 cup Coconut milk",
-      "1 Onion (chopped)",
-      "1 Tomato (chopped)",
-      "Turmeric & Chili powder",
-      "2 tbsp Oil",
-      "Salt to taste"
+      "500 g Fish fillets (Kingfish or Pomfret), cut into chunks",
+      "1 cup Thick coconut milk",
+      "1 medium Onion, chopped",
+      "1 Tomato, chopped",
+      "1/2 tsp Turmeric & 1 tsp chili powder",
+      "2 tbsp Coconut oil & 8-10 curry leaves",
+      "Salt to taste",
+      "1 tsp Mustard seeds"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Simmer coconut gravy",
-        "description": "Heat oil. Sauté onions and tomatoes. Add turmeric and chili powder. Pour in coconut milk and bring to a simmer.",
-        "image": "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=400&q=80"
+        "title": "Temper & Cook Aromatics",
+        "description": "Heat coconut oil, splutter mustard seeds, curry leaves, and sauté onions until soft. Add chopped tomatoes and cook for 3 minutes.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 2,
-        "title": "Poach fish",
-        "description": "Add fish pieces gently into the simmering gravy. Cook for 10 minutes on low heat until the fish is tender and flakes easily. Serve with steamed rice.",
-        "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=400&q=80"
+        "title": "Add Spices & Coconut Milk",
+        "description": "Add turmeric, chili powder, and salt. Pour in the coconut milk and bring to a very gentle simmer.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Poach Fish Fillets",
+        "description": "Slide the fish fillets gently into the coconut gravy. Cover and cook on low heat for 8 minutes.",
+        "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 4,
+        "title": "Simmer & Garnish",
+        "description": "Gently shake the pot to mix (do not stir to avoid breaking fish). Cook uncovered for 2 minutes and garnish with curry leaves. Serve with rice.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -2448,25 +2634,39 @@
       "carbs": 12
     },
     "ingredients": [
-      "6 boiled eggs",
-      "1 Onion (chopped)",
-      "1 Tomato (chopped)",
-      "1 tsp Ginger-garlic paste",
-      "2 tsp Curry masala",
-      "2 tbsp Oil"
+      "6 Hard-boiled eggs, peeled and lightly slit",
+      "2 large Onions, chopped",
+      "2 Tomatoes, pureed",
+      "1 tbsp Ginger-garlic paste",
+      "1 tsp Garam masala & 1 tsp red chili powder",
+      "2 tbsp Cooking oil",
+      "Salt to taste",
+      "1/2 tsp Turmeric powder"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Build curry gravy",
-        "description": "Boil and peel eggs. Fry onions, ginger-garlic paste, and tomatoes in a pan. Add spices and a splash of water, simmer.",
-        "image": "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=400&q=80"
+        "title": "Pan-Fry Boiled Eggs",
+        "description": "Heat 1 tsp oil in a pan, toss eggs with a pinch of turmeric and chili powder for 2 minutes until blistered and golden. Set aside.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 2,
-        "title": "Add eggs",
-        "description": "Make small slits in the boiled eggs. Place them in the simmering gravy and cook for 10 minutes until eggs absorb the flavor.",
+        "title": "Cook Onion-Tomato Masala",
+        "description": "Heat remaining oil. Sauté onions and ginger-garlic paste until brown. Add tomato puree and spices, cook until oil separates.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Simmer Eggs in Gravy",
+        "description": "Add 1 cup water, salt, and the fried eggs to the gravy. Cover and simmer on low for 10 minutes.",
         "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 4,
+        "title": "Final Thickening",
+        "description": "Uncover and cook until the gravy reaches your desired thick consistency. Garnish with chopped coriander.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -2494,26 +2694,39 @@
       "carbs": 10
     },
     "ingredients": [
-      "500 g mutton pieces",
-      "1/2 cup Yogurt",
-      "1 Onion (sliced)",
-      "1 tbsp Ginger-garlic paste",
-      "2 tsp Kashmiri chili powder",
-      "1 tsp Garam masala",
-      "3 tbsp Oil"
+      "500 g Mutton (lamb or goat), cut into pieces",
+      "1 cup Yogurt, beaten",
+      "1 tbsp Ginger paste & 1 tbsp Garlic paste",
+      "2 tsp Kashmiri red chili powder (for red color)",
+      "Whole spices (cardamom, cloves, fennel seeds)",
+      "3 tbsp Mustard oil or ghee",
+      "Salt to taste",
+      "1 tsp Garam masala powder"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Sear meat and build gravy",
-        "description": "Heat oil. Brown onions, add ginger-garlic paste, and spices. Stir in yogurt and add mutton pieces. Cook mutton on high heat.",
-        "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=400&q=80"
+        "title": "Sear Mutton with Spices",
+        "description": "Heat mustard oil in a heavy-bottomed pot. Crackle whole spices, add mutton pieces, and sear on high heat for 5 minutes.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 2,
-        "title": "Slow cook until tender",
-        "description": "Add water, cover tightly, and simmer on low heat for 40-50 minutes until the mutton is melt-in-your-mouth tender.",
-        "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=400&q=80"
+        "title": "Stir in Yogurt & Chilies",
+        "description": "Lower heat. Mix kashmiri chili powder with ginger-garlic paste and stir into mutton. Add beaten yogurt slowly, stirring constantly.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Slow Cook Curry",
+        "description": "Add 2 cups of water and salt. Cover and simmer on low heat for 45-50 minutes, stirring occasionally, until mutton is fork-tender.",
+        "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 4,
+        "title": "Spice Finishes",
+        "description": "Sprinkle garam masala and chopped fennel powder. Cook uncovered for 5 minutes until gravy is rich, then serve warm.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -2541,25 +2754,40 @@
       "carbs": 12
     },
     "ingredients": [
-      "500 g minced mutton (keema)",
-      "1 Onion (chopped)",
-      "1 Tomato (chopped)",
+      "500 g Minced mutton (Keema)",
+      "2 large Onions, finely chopped",
+      "2 Tomatoes, chopped",
       "1 tbsp Ginger-garlic paste",
-      "1/2 cup Green peas",
-      "Indian Keema Spices"
+      "1 cup Green peas",
+      "2 tbsp Keema masala powder",
+      "2 tbsp Cooking oil",
+      "Salt to taste",
+      "1 tsp Red chili powder & 1/2 tsp garam masala"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Cook minced meat base",
-        "description": "Fry onions, then add ginger-garlic paste, tomatoes, and spices. Sauté minced meat, stirring constantly to break lumps.",
-        "image": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=400&q=80"
+        "title": "Sauté Aromatics & Veggies",
+        "description": "Heat oil in a pan. Sauté chopped onions and ginger-garlic paste until brown. Add tomatoes and cook until mushy.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 2,
-        "title": "Add peas and simmer",
-        "description": "Add green peas, splash of water, simmer for 15 minutes until meat is cooked completely. Garnish with coriander.",
-        "image": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?auto=format&fit=crop&w=400&q=80"
+        "title": "Cook Minced Keema",
+        "description": "Add minced keema and sauté on high heat for 10 minutes, breaking any lumps. Add keema masala and chili powder.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Add Peas & Water",
+        "description": "Pour in 1 cup of warm water, add green peas and salt. Mix well.",
+        "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 4,
+        "title": "Slow Simmer",
+        "description": "Cover and cook on low heat for 15-20 minutes until meat is cooked and peas are tender. Finish with garam masala.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -2587,19 +2815,33 @@
       "carbs": 10
     },
     "ingredients": [
-      "500 g prawns (cleaned & deveined)",
-      "1 Onion (chopped)",
-      "1 Tomato (chopped)",
-      "1 tsp Ginger-garlic paste",
-      "Turmeric & Chili powder",
-      "Fresh coriander & lemon"
+      "250 g Prawns, peeled and deveined",
+      "1 large Onion, chopped",
+      "2 Tomatoes, chopped",
+      "1 tbsp Ginger-garlic paste",
+      "1 tsp Red chili powder & 1/2 tsp turmeric",
+      "2 tbsp Cooking oil",
+      "Salt to taste",
+      "8-10 Curry leaves"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Sauté prawn gravy",
-        "description": "Clean prawns. Fry onions, ginger-garlic paste, and tomatoes. Add spices, fold in prawns, and cook for 8 minutes. Garnish and serve.",
-        "image": "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=400&q=80"
+        "title": "Sauté Curry Base",
+        "description": "Heat oil in a pan. Fry onions, curry leaves, and ginger-garlic paste until translucent. Add chopped tomatoes and cook until soft.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 2,
+        "title": "Add Spices",
+        "description": "Add red chili powder, turmeric, and salt. Sauté for 2 minutes on low heat until the spices are aromatic.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Cook Prawns",
+        "description": "Toss in the prawns. Cook on medium heat, stirring gently, for exactly 5-6 minutes until the prawns turn pink and curled. Serve immediately.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -2627,24 +2869,38 @@
       "carbs": 8
     },
     "ingredients": [
-      "500 g chicken breast (cubed)",
-      "1/2 cup Yogurt",
+      "500 g Chicken breast, cut into bite-sized cubes",
+      "1/2 cup Greek yogurt",
       "1 tbsp Ginger-garlic paste",
-      "1 tbsp Lemon juice",
-      "2 tbsp Tikka masala"
+      "1.5 tbsp Tandoori masala powder",
+      "1 tbsp Lemon juice & 1 tbsp oil",
+      "Salt to taste",
+      "1 tsp Kashmiri red chili powder"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Marinate chicken skewers",
-        "description": "Marinate chicken in yogurt, lemon juice, ginger-garlic paste, and tikka masala for 2 hours.",
-        "image": "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=400&q=80"
+        "title": "Blend Marinade",
+        "description": "In a bowl, whisk yogurt, ginger-garlic paste, tandoori masala, red chili, lemon juice, oil, and salt until smooth.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 2,
-        "title": "Bake chicken",
-        "description": "Preheat oven. Arrange chicken on skewers, bake at 220°C for 20 minutes, turn halfway, brush with butter, and serve hot.",
-        "image": "https://images.unsplash.com/photo-1604503468506-a8da13d82791?auto=format&fit=crop&w=400&q=80"
+        "title": "Marinate Chicken",
+        "description": "Add chicken cubes to the marinade and mix well to coat. Cover and refrigerate for at least 1 hour.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Skewering",
+        "description": "Thread chicken cubes onto pre-soaked wooden or metal skewers, leaving a small space between pieces.",
+        "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 4,
+        "title": "Grill and Char",
+        "description": "Grill in a preheated oven at 400°F (200°C) or on a hot grill pan for 15-20 minutes, basting with butter, until cooked through and lightly charred.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -2672,24 +2928,38 @@
       "carbs": 10
     },
     "ingredients": [
-      "Whole chicken pieces",
-      "Yogurt",
-      "Tandoori masala",
-      "Lemon juice",
-      "Ginger-garlic paste"
+      "500 g Chicken drumsticks (with deep gashes)",
+      "1/2 cup Greek yogurt",
+      "1 tbsp Ginger-garlic paste",
+      "2 tbsp Kashmiri red chili powder",
+      "1 tbsp Tandoori masala powder",
+      "1 tbsp Lemon juice & 1 tbsp mustard oil",
+      "Salt to taste"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Prepare cuts and marinate",
-        "description": "Make deep cuts in chicken pieces, marinate with yogurt, lemon juice, ginger-garlic paste, and tandoori masala. Rest for 2 hours.",
-        "image": "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=400&q=80"
+        "title": "First Marinade",
+        "description": "Rub lemon juice and salt all over the slashed chicken drumsticks. Rest for 15 minutes.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 2,
-        "title": "Grill or bake chicken",
-        "description": "Bake or grill chicken, turn occasionally, brush with butter, cook completely, and serve with lemon wedges.",
-        "image": "https://images.unsplash.com/photo-1604503468506-a8da13d82791?auto=format&fit=crop&w=400&q=80"
+        "title": "Second Marinade",
+        "description": "Whisk yogurt, ginger-garlic paste, kashmiri chili, tandoori masala, and mustard oil. Apply to chicken and marinate for 2 hours.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Preheat & Bake",
+        "description": "Preheat oven to 425°F (220°C). Place chicken on a baking sheet lined with foil.",
+        "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 4,
+        "title": "Roast drumsticks",
+        "description": "Roast for 25-30 minutes, brushing with butter halfway through, until cooked and edges are beautifully charred.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -2717,19 +2987,40 @@
       "carbs": 14
     },
     "ingredients": [
-      "Chicken",
-      "Yogurt",
-      "Onion (sliced & fried)",
-      "Cashew paste",
-      "Heavy cream",
-      "Garam masala"
+      "500 g Chicken pieces",
+      "1/2 cup Cashew nut paste",
+      "1/2 cup Thick yogurt",
+      "2 large Onions, pureed and fried",
+      "1 tbsp Ginger-garlic paste",
+      "Whole spices (cardamom, mace, cinnamon)",
+      "3 tbsp Ghee or oil",
+      "Salt to taste",
+      "1/2 tsp Garam masala powder"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Simmer chicken in yogurt cashew base",
-        "description": "Fry onions. Add chicken, spices, yogurt, and cashew paste. Cover and cook until chicken is soft. Stir in heavy cream and simmer.",
-        "image": "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=400&q=80"
+        "title": "Sear Chicken with Aromatics",
+        "description": "Heat ghee, sauté whole spices until fragrant. Add ginger-garlic paste and chicken pieces. Sear on medium-high for 5 minutes.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 2,
+        "title": "Stir in Onion & Yogurt",
+        "description": "Reduce heat. Stir in fried onion puree, yogurt, and salt. Cook for 5 minutes until chicken absorbs the flavors.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Simmer with Cashew Paste",
+        "description": "Add cashew paste and 1 cup water. Cover and simmer on low heat for 20-25 minutes until chicken is completely tender.",
+        "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 4,
+        "title": "Finish Gravy",
+        "description": "Sprinkle garam masala. Simmer uncovered for 2 minutes until the gravy is smooth, velvety, and oil floats on top.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -2757,24 +3048,39 @@
       "carbs": 24
     },
     "ingredients": [
-      "Gram flour (besan)",
-      "Yogurt",
-      "Eno fruit salt",
-      "Turmeric & Salt",
-      "Mustard seeds & Curry leaves (for tempering)"
+      "1.5 cups Gram flour (besan)",
+      "1 tbsp Semolina (sooji)",
+      "1 tsp Fruit salt (Eno)",
+      "1 tbsp Lemon juice",
+      "1 tsp Mustard seeds & 2 green chilies",
+      "10-12 Curry leaves",
+      "1 tbsp Oil (for tempering)",
+      "Salt & Sugar to taste"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Steam dhokla batter",
-        "description": "Mix gram flour, yogurt, turmeric, and water into a smooth batter. Stir in Eno fruit salt, pour into a greased tray, and steam for 15 minutes.",
-        "image": "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=400&q=80"
+        "title": "Whisk Batter",
+        "description": "Mix besan, sooji, water, lemon juice, salt, and sugar into a smooth batter. Rest for 10 minutes.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 2,
-        "title": "Apply tempering",
-        "description": "Prepare tempering by heating oil and crackling mustard seeds, curry leaves, and sliced green chilies. Pour over steamed dhokla, cut, and serve.",
-        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80"
+        "title": "Activate & Steam",
+        "description": "Just before steaming, add Eno fruit salt and stir quickly until frothy. Immediately pour into a greased pan and steam for 15 minutes.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Prepare Sweet Tempering",
+        "description": "Heat oil in a small pan, splutter mustard seeds, curry leaves, and chilies. Pour in 1/2 cup water and 1 tsp sugar. Bring to a boil.",
+        "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 4,
+        "title": "Cut & Soak",
+        "description": "Cut the dhokla into cubes. Pour the warm tempering water evenly over the dhokla, allowing it to absorb and become juicy. Serve warm.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -2802,24 +3108,39 @@
       "carbs": 22
     },
     "ingredients": [
-      "Gram flour",
-      "Yogurt",
-      "Turmeric",
-      "Mustard seeds",
-      "Curry leaves & grated coconut"
+      "1 cup Gram flour (besan)",
+      "1 cup Sour yogurt",
+      "2 cups Water",
+      "1/2 tsp Turmeric & 1/2 tsp ginger-chili paste",
+      "1 tsp Mustard seeds & 1 tsp sesame seeds",
+      "2 tbsp Grated coconut & fresh coriander",
+      "2 tbsp Cooking oil",
+      "Salt to taste"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Cook and spread batter",
-        "description": "Mix gram flour, yogurt, and water. Cook on low heat, stirring continuously, until thick. Spread thinly over a greased surface immediately.",
-        "image": "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=400&q=80"
+        "title": "Whisk & Cook Batter",
+        "description": "Whisk besan, yogurt, water, turmeric, ginger-chili paste, and salt into a lump-free batter. Cook on medium-low heat in a pan, stirring constantly for 8-10 minutes.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
       },
       {
         "step": 2,
-        "title": "Roll and temper strips",
-        "description": "Cool slightly. Cut into strips and roll them up. Prepare tempering with mustard seeds and curry leaves. Pour over rolls, garnish with coconut, and serve.",
-        "image": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=400&q=80"
+        "title": "Test Consistency",
+        "description": "Spread a small spoonful of paste on a plate. If it rolls easily after cooling, the batter is cooked. If not, cook for 1-2 minutes more.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Spread & Roll",
+        "description": "Quickly spread the hot paste in a thin layer over greased backs of plates. Let cool, slice into 1.5-inch strips, and roll tightly into spirals.",
+        "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 4,
+        "title": "Tempering Finish",
+        "description": "Heat oil, crackle mustard and sesame seeds. Pour over the rolled khandvi, garnish with coconut and coriander.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -2847,18 +3168,32 @@
       "carbs": 26
     },
     "ingredients": [
-      "Wheat flour",
-      "Fenugreek leaves (methi, chopped)",
-      "Yogurt",
-      "Turmeric & Chili powder",
-      "Oil for skillet cooking"
+      "2 cups Whole wheat flour (atta)",
+      "1/2 cup Fresh fenugreek leaves (methi), finely chopped",
+      "1/2 tsp Turmeric & 1/2 tsp red chili powder",
+      "1/4 cup Yogurt",
+      "Oil or ghee for cooking",
+      "Salt to taste",
+      "1/2 tsp Cumin seeds"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Roll and cook theplas",
-        "description": "Knead flour, fenugreek, yogurt, and spices into a dough. Roll thin circular circles, cook on a hot skillet, apply oil, and serve.",
-        "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=400&q=80"
+        "title": "Knead Thepla Dough",
+        "description": "Knead whole wheat flour, chopped methi leaves, turmeric, cumin, chili powder, salt, yogurt, and 1 tbsp oil into a soft dough.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 2,
+        "title": "Roll Thin",
+        "description": "Divide dough into equal balls. Roll them out into very thin circles on a floured board.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Roast on Tawa",
+        "description": "Roast on a hot tawa with a drizzle of oil/ghee. Press gently with a cloth or spatula, cooking both sides until golden spots appear.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -2886,17 +3221,31 @@
       "carbs": 32
     },
     "ingredients": [
-      "Rice & Mixed lentils",
-      "Bottle gourd (grated)",
-      "Yogurt",
-      "Sesame seeds & Mustard seeds"
+      "1 cup Rice & 1/2 cup mixed lentils (toor, chana, urad dal), soaked for 4 hours",
+      "1 cup Grated bottle gourd (lauki)",
+      "1 tsp Mustard seeds & 1 tsp sesame seeds",
+      "1/2 tsp Fruit salt (Eno)",
+      "Salt & sugar to taste",
+      "3 tbsp Oil & curry leaves"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Ferment and bake handvo",
-        "description": "Soak and grind rice/lentils. Ferment overnight. Add bottle gourd, pour into pan, sprinkle sesame seeds, bake covered, slice, and serve hot.",
-        "image": "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=400&q=80"
+        "title": "Make Handvo Batter",
+        "description": "Grind soaked rice and lentils into a thick batter. Stir in the grated bottle gourd, salt, sugar, and Eno just before cooking.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 2,
+        "title": "Tempering the Pan",
+        "description": "Heat 2 tbsp oil in a non-stick pan, add mustard seeds, sesame seeds, and curry leaves. Let them sizzle.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Cook Handvo Cake",
+        "description": "Pour batter into the pan. Cover and cook on low heat for 12 minutes until bottom is crispy. Flip, cover, and cook other side for 8 minutes.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -2924,17 +3273,39 @@
       "carbs": 48
     },
     "ingredients": [
-      "Sprouted moth beans",
-      "Onion & Tomato (chopped)",
-      "Misal masala",
-      "Pav buns & Farsan (crispy mixture)"
+      "2 cups Sprouted moth beans (matki), boiled",
+      "2 large Onions, chopped",
+      "2 Tomatoes, chopped",
+      "2 tbsp Spicy misal masala powder",
+      "2 cups Farsan/mixture mix",
+      "Salt & lemon wedges",
+      "8 Pav buns",
+      "2 tbsp Oil"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Simmer sprouts in spicy gravy",
-        "description": "Cook sprouts. Make spicy onion-tomato gravy, mix sprouts, and simmer. Toast pav in butter, top misal with onions/farsan, and serve.",
-        "image": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?auto=format&fit=crop&w=400&q=80"
+        "title": "Cook Moth Beans",
+        "description": "Boil sprouted moth beans in water with turmeric and salt until tender.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 2,
+        "title": "Prepare Spicy Kat Gravy",
+        "description": "Heat oil. Sauté onions, tomatoes, and misal masala. Add water and boil into a thin, fiery red spicy gravy (Kat).",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Toast Pav Buns",
+        "description": "Lightly butter and toast pav buns on a hot tawa until soft and warm.",
+        "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 4,
+        "title": "Layer and Serve",
+        "description": "In a bowl, layer boiled matki sprouts, pour Kat gravy, top with farsan, raw onions, and coriander. Serve with pav and lemon.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -2962,17 +3333,32 @@
       "carbs": 52
     },
     "ingredients": [
-      "Sabudana (soaked)",
-      "1/2 cup Peanuts (roasted & crushed)",
-      "1 Potato (diced)",
-      "Green chili & Cumin"
+      "1 cup Sago (Sabudana), washed and soaked with water just covering it for 5 hours",
+      "1/2 cup Roasted peanuts, crushed coarsely",
+      "1 large Potato, boiled and diced",
+      "1 tsp Cumin seeds",
+      "2 Green chilies, chopped",
+      "2 tbsp Ghee or cooking oil & curry leaves",
+      "Salt & lemon juice"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Sauté khichdi base",
-        "description": "Soak sabudana. Fry potatoes, cumin, and chilies. Mix sabudana, peanuts, cook gently, add lemon juice, and serve.",
-        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80"
+        "title": "Drain Sabudana",
+        "description": "Ensure the soaked sabudana is drained completely and grains are separate and soft to touch.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 2,
+        "title": "Sauté Toppings",
+        "description": "Heat ghee. Sauté cumin seeds, curry leaves, chopped green chilies, boiled potatoes, and roasted peanuts.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Combine & Simmer",
+        "description": "Add sabudana and salt. Mix gently. Cook covered on low heat, stirring occasionally, until sago pearls turn translucent. Drizzle lemon juice.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -3000,17 +3386,31 @@
       "carbs": 32
     },
     "ingredients": [
-      "Green gram (whole moong)",
-      "Ginger",
-      "Green chili",
-      "Cumin & Salt"
+      "1.5 cups Whole green gram (green moong), soaked for 5 hours",
+      "1 inch Ginger & 2 green chilies",
+      "1 tsp Cumin seeds",
+      "Oil or ghee for cooking",
+      "Salt to taste",
+      "1 small Onion, finely chopped"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Spread moon crepe batter",
-        "description": "Soak moong. Grind with ginger and chili into batter. Spread thin on hot pan, drizzle oil, cook until crisp, fold, and serve.",
-        "image": "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=400&q=80"
+        "title": "Grind Moong Batter",
+        "description": "Grind soaked moong, ginger, green chilies, cumin seeds, salt, and water into a smooth batter.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 2,
+        "title": "Cook Crepe",
+        "description": "Pour batter on a hot tawa and spread in a thin circle. Drizzle oil or ghee around the edges.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Crisp and Fold",
+        "description": "Top with chopped raw onions if desired. Cook until golden brown and crispy, fold, and serve hot.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -3038,18 +3438,32 @@
       "carbs": 12
     },
     "ingredients": [
-      "Tamarind water",
-      "2 Tomatoes (mashed)",
-      "2 tsp Rasam powder",
-      "Garlic & Curry leaves",
-      "Mustard seeds (for tempering)"
+      "2 tbsp Tamarind pulp mixed with 2 cups water",
+      "2 ripe Tomatoes, mashed",
+      "1.5 tbsp Rasam powder & 1 tsp black pepper-cumin powder",
+      "1 tsp Mustard seeds",
+      "4 cloves Garlic, crushed & 10 curry leaves",
+      "2 tbsp Ghee (for tempering)",
+      "Salt to taste"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Boil tomato tamarind soup",
-        "description": "Prepare tamarind water. Add tomatoes and rasam powder, boil. Add tempered garlic/mustard/curry leaves, simmer, and serve.",
-        "image": "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=400&q=80"
+        "title": "Boil Tamarind Soup Base",
+        "description": "In a pot, boil the tamarind water, mashed tomatoes, rasam powder, and salt together for 10 minutes until raw smell disappears.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 2,
+        "title": "Prepare Tempering",
+        "description": "Heat ghee. Splutter mustard seeds, crushed garlic, black pepper-cumin powder, and curry leaves.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Combine & Simmer",
+        "description": "Pour the hot tempering over the boiling rasam. Simmer for 2 minutes, turn off heat, and serve hot.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -3077,18 +3491,32 @@
       "carbs": 26
     },
     "ingredients": [
-      "Mixed vegetables (yam, drumstick, carrot, pumpkin)",
+      "2 cups Mixed vegetables (carrot, raw banana, drumstick, ash gourd, pumpkin), sliced lengthwise",
       "1 cup Grated coconut",
       "2 Green chilies",
-      "1/2 cup Yogurt",
-      "Coconut oil & Curry leaves"
+      "1/2 cup Sour yogurt, beaten",
+      "2 tbsp Coconut oil",
+      "10-12 Curry leaves & 1/2 tsp cumin seeds",
+      "Salt to taste"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Boil veggies and fold coconut paste",
-        "description": "Chop and boil vegetables. Grind coconut and chilies into a paste. Add to vegetables, fold in yogurt, add coconut oil/curry leaves, simmer, and serve.",
-        "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=400&q=80"
+        "title": "Steam Mixed Veggies",
+        "description": "Cook the sliced vegetables with minimal water, salt, and turmeric until tender but firm.",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 2,
+        "title": "Add Coconut Paste",
+        "description": "Grind grated coconut, green chilies, and cumin seeds coarsely. Fold this paste into the cooked vegetables. Cook for 3 minutes.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Finish with Yogurt & Oil",
+        "description": "Reduce heat, stir in the yogurt. Drizzle coconut oil and throw in fresh curry leaves. Simmer for 1 minute without boiling.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",
@@ -3116,18 +3544,31 @@
       "carbs": 34
     },
     "ingredients": [
-      "2 cups Rice",
+      "2 cups Raw rice, soaked for 4 hours",
       "1 cup Grated coconut",
-      "1/2 tsp Yeast",
+      "1/2 cup Cooked rice",
+      "1/2 tsp Instant yeast",
       "1 tbsp Sugar",
       "Salt to taste"
     ],
     "instructions": [
       {
         "step": 1,
-        "title": "Ferment and swirl appam batter",
-        "description": "Soak rice, grind with coconut, add yeast and sugar, ferment overnight. Pour batter into hot appam pan, swirl, cover and cook, and serve hot.",
-        "image": "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=400&q=80"
+        "title": "Ferment Batter",
+        "description": "Grind soaked rice, grated coconut, and cooked rice with water into a smooth batter. Stir in yeast and sugar. Let ferment overnight (8 hours).",
+        "image": "https://images.unsplash.com/photo-1541128741139-e8beee3fd7b2?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 2,
+        "title": "Pour and Swirl",
+        "description": "Heat an appam kadai. Pour a ladle of batter and swirl the pan to coat sides, leaving a thick pool in the center.",
+        "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "step": 3,
+        "title": "Steam Appam",
+        "description": "Cover and cook on medium heat for 2 minutes until edges turn golden and crispy while the center remains soft. Serve warm with coconut milk.",
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
       }
     ],
     "youtubeUrl": "https://www.youtube.com/embed/V37eaL2fX1U",

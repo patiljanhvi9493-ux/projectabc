@@ -1262,5 +1262,6 @@ footer {
   transform: scale(1.1);
   color: var(--primary-color);
 }
-
-
+#q-title-link:hover {
+  color: var(--primary-color) !important;
+}

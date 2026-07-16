@@ -280,7 +280,7 @@ async function openQuickInfoModal(recipeId) {
           <button class="quick-info-close-btn"><i class="fa-solid fa-xmark"></i></button>
           <div class="quick-info-title-wrap">
             <span class="quick-info-tag" id="q-tag">Category</span>
-            <h3 class="quick-info-title" id="q-title">Recipe Title</h3>
+            <h3 class="quick-info-title"><a href="#" id="q-title-link" style="color: #fff; text-decoration: none; transition: opacity 0.2s;">Recipe Title</a></h3>
           </div>
         </div>
         <div class="quick-info-body">
@@ -322,7 +322,11 @@ async function openQuickInfoModal(recipeId) {
   
   modal.querySelector('.quick-info-header').style.backgroundImage = `url('${recipe.image}')`;
   modal.querySelector('#q-tag').textContent = recipe.category;
-  modal.querySelector('#q-title').textContent = recipe.title;
+  
+  const titleLink = modal.querySelector('#q-title-link');
+  titleLink.textContent = recipe.title;
+  titleLink.href = `recipe.html?id=${recipe.id}`;
+  
   modal.querySelector('#q-desc').textContent = recipe.description;
   modal.querySelector('#q-calories').textContent = `${recipe.calories} kcal`;
   modal.querySelector('#q-time').textContent = `${recipe.prepTime + recipe.cookTime} Min`;
