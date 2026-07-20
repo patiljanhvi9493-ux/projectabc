@@ -16,7 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // Load database
   fetch('data/recipes.json')
     .then(res => res.json())
-    .then(recipes => {
+    .then(staticRecipes => {
+      const userRecipesData = localStorage.getItem('flavorbook_user_recipes');
+      const userRecipes = userRecipesData ? JSON.parse(userRecipesData) : [];
+      const recipes = [...userRecipes, ...staticRecipes];
+
       const recipe = recipes.find(r => r.id === recipeId);
       if (!recipe) {
         window.location.href = '404.html';

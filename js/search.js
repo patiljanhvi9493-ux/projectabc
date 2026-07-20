@@ -45,7 +45,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
       try {
         const response = await fetch('data/recipes.json');
-        const recipes = await response.json();
+        const staticRecipes = await response.json();
+        const userRecipesData = localStorage.getItem('flavorbook_user_recipes');
+        const userRecipes = userRecipesData ? JSON.parse(userRecipesData) : [];
+        const recipes = [...userRecipes, ...staticRecipes];
         
         const filtered = recipes.filter(recipe => 
           recipe.title.toLowerCase().includes(query) ||

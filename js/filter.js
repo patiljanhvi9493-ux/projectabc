@@ -23,8 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Load recipes database
   fetch('data/recipes.json')
     .then(res => res.json())
-    .then(data => {
-      currentRecipes = data;
+    .then(staticRecipes => {
+      const userRecipesData = localStorage.getItem('flavorbook_user_recipes');
+      const userRecipes = userRecipesData ? JSON.parse(userRecipesData) : [];
+      currentRecipes = [...userRecipes, ...staticRecipes];
       filteredRecipes = [...currentRecipes];
       
       // Sync URL parameters on landing

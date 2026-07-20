@@ -263,25 +263,26 @@ header.scrolled {
   gap: 20px;
 }
 
-.search-trigger, .theme-toggle {
+.search-trigger, .profile-trigger, .theme-toggle {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: var(--dark-color);
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
   transition: background-color var(--transition-fast), color var(--transition-fast), transform var(--transition-normal);
 }
 
-.search-trigger:hover, .theme-toggle:hover {
-  background-color: rgba(255, 107, 53, 0.1);
+.search-trigger:hover, .profile-trigger:hover, .theme-toggle:hover, .profile-trigger.active {
+  background-color: rgba(255, 107, 53, 0.12);
   color: var(--primary-color);
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 .hamburger {

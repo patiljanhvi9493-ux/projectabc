@@ -186,16 +186,13 @@ function updateAuthUI() {
     if (loginLink) {
       if (isLoggedIn) {
         loginLink.innerHTML = '<i class="fa-solid fa-right-from-bracket"></i> Logout';
-        loginLink.href = '#';
+        loginLink.href = 'logout.html';
         loginLink.classList.add('logout-trigger');
         loginLink.onclick = (e) => {
           e.preventDefault();
           localStorage.removeItem('isLoggedIn');
           localStorage.removeItem('userEmail');
-          showToast('Logged out successfully!', 'info');
-          setTimeout(() => {
-            window.location.href = 'index.html';
-          }, 1000);
+          window.location.href = 'logout.html';
         };
       } else {
         loginLink.innerHTML = 'Login';
@@ -211,20 +208,27 @@ function updateAuthUI() {
   footerLinks.forEach(link => {
     if (isLoggedIn) {
       link.innerHTML = 'Logout';
-      link.href = '#';
+      link.href = 'logout.html';
       link.onclick = (e) => {
         e.preventDefault();
         localStorage.removeItem('isLoggedIn');
         localStorage.removeItem('userEmail');
-        showToast('Logged out successfully!', 'info');
-        setTimeout(() => {
-          window.location.href = 'index.html';
-        }, 1000);
+        window.location.href = 'logout.html';
       };
     } else {
       link.innerHTML = 'Login Portal';
       link.href = 'login.html';
       link.onclick = null;
+    }
+  });
+
+  // Profile Button handling
+  const profileBtns = document.querySelectorAll('.profile-trigger');
+  profileBtns.forEach(btn => {
+    if (!isLoggedIn) {
+      btn.title = "Login / Profile";
+    } else {
+      btn.title = "Chef Profile";
     }
   });
 }
@@ -251,14 +255,17 @@ function initHeroSlider() {
 let recipesDataCache = null;
 
 async function getRecipesData() {
-  if (recipesDataCache) return recipesDataCache;
   try {
     const response = await fetch('data/recipes.json');
-    recipesDataCache = await response.json();
+    const staticRecipes = await response.json();
+    const userRecipesData = localStorage.getItem('flavorbook_user_recipes');
+    const userRecipes = userRecipesData ? JSON.parse(userRecipesData) : [];
+    recipesDataCache = [...userRecipes, ...staticRecipes];
     return recipesDataCache;
   } catch (error) {
     console.error('Error loading recipes data:', error);
-    return [];
+    const userRecipesData = localStorage.getItem('flavorbook_user_recipes');
+    return userRecipesData ? JSON.parse(userRecipesData) : [];
   }
 }
 

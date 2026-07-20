@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="You have logged out of FlavorBook. Log back in anytime to access your saved recipes and profile.">
+  <title>Logged Out – FlavorBook</title>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/dark.css">
+
+  <style>
+    .logout-wrapper {
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .logout-bg-glow {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(255, 107, 107, 0.25) 0%, rgba(255, 159, 67, 0.15) 50%, rgba(0, 0, 0, 0) 70%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      filter: blur(60px);
+      z-index: 1;
+      pointer-events: none;
+      animation: pulseGlow 6s ease-in-out infinite alternate;
+    }
+
+    @keyframes pulseGlow {
+      0% { transform: translate(-50%, -50%) scale(0.9); opacity: 0.7; }
+      100% { transform: translate(-50%, -50%) scale(1.15); opacity: 1; }
+    }
+
+    .floating-food {
+      position: absolute;
+      font-size: 2.2rem;
+      z-index: 2;
+      pointer-events: none;
+      opacity: 0.65;
+      animation: floatFood 8s ease-in-out infinite alternate;
+    }
+
+    .f-1 { top: 15%; left: 12%; animation-delay: 0s; }
+    .f-2 { top: 22%; right: 14%; animation-delay: 1.5s; }
+    .f-3 { bottom: 20%; left: 15%; animation-delay: 3s; }
+    .f-4 { bottom: 18%; right: 12%; animation-delay: 4.5s; }
+    .f-5 { top: 60%; left: 6%; animation-delay: 2s; }
+    .f-6 { top: 65%; right: 8%; animation-delay: 3.5s; }
+
+    @keyframes floatFood {
+      0% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(12deg); }
+      100% { transform: translateY(-40px) rotate(-10deg); }
+    }
+
+    .logout-card {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      max-width: 540px;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 32px;
+      padding: 50px 40px;
+      text-align: center;
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
+      animation: logoutCardEntrance 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    body.dark-mode .logout-card {
+      background: rgba(30, 30, 42, 0.75);
+      border-color: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+    }
+
+    @keyframes logoutCardEntrance {
+      0% { opacity: 0; transform: translateY(40px) scale(0.95); }
+      100% { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .logout-icon-ring {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 28px;
+      background: linear-gradient(135deg, var(--primary-color, #ff6b6b), #ff9f43);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 2.8rem;
+      box-shadow: 0 15px 35px rgba(255, 107, 107, 0.35);
+      position: relative;
+      animation: pulseRing 2.5s infinite;
+    }
+
+    @keyframes pulseRing {
+      0% { box-shadow: 0 0 0 0 rgba(255, 107, 107, 0.6); }
+      70% { box-shadow: 0 0 0 22px rgba(255, 107, 107, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(255, 107, 107, 0); }
+    }
+
+    .logout-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 16px;
+      border-radius: 50px;
+      background-color: rgba(255, 107, 107, 0.12);
+      color: var(--primary-color, #ff6b6b);
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .logout-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--dark-color);
+      margin-bottom: 14px;
+      line-height: 1.25;
+    }
+
+    .logout-desc {
+      font-size: 1.05rem;
+      color: var(--text-light);
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+
+    .logout-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .logout-btn-login {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 16px 28px;
+      background: linear-gradient(135deg, var(--primary-color, #ff6b6b), #ff8e53);
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 10px 25px rgba(255, 107, 107, 0.35);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    .logout-btn-login:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 32px rgba(255, 107, 107, 0.5);
+      color: #fff;
+    }
+
+    .logout-btn-guest {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 14px 28px;
+      background: var(--card-bg);
+      color: var(--text-color);
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 50px;
+      border: 1px solid var(--border-color);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .logout-btn-guest:hover {
+      background: var(--bg-color);
+      border-color: var(--primary-color);
+      color: var(--primary-color);
+      transform: translateY(-2px);
+    }
+
+    .logout-quote {
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px dashed var(--border-color);
+      font-size: 0.9rem;
+      color: var(--text-light);
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo">🍳 Flavor<span>Book</span></a>
+      
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="recipes.html" class="nav-link">Recipes</a></li>
+        <li><a href="categories.html" class="nav-link">Categories</a></li>
+        <li><a href="favorites.html" class="nav-link">Favorites</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="login.html" class="nav-link">Login</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="search-trigger" id="open-search" aria-label="Open Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <a href="profile.html" class="profile-trigger" id="header-profile-btn" aria-label="User Profile" title="Profile"><i class="fa-solid fa-circle-user"></i></a>
+        <button class="theme-toggle" aria-label="Toggle Dark Mode"><i class="fa-solid fa-moon"></i></button>
+        <button class="hamburger" aria-label="Open Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Global Search Overlay -->
+  <div class="search-overlay">
+    <button class="search-close" aria-label="Close Search">&times;</button>
+    <div class="search-box">
+      <input type="text" id="global-search-input" placeholder="Search recipes, ingredients, cuisines...">
+      <button id="global-search-btn" aria-label="Submit Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <div id="search-suggestions" style="display: none; background-color: var(--card-bg); border-radius: 12px; margin-top: 10px; box-shadow: var(--shadow-lg); overflow: hidden;"></div>
+    </div>
+  </div>
+
+  <!-- Logout Content -->
+  <main class="logout-wrapper">
+    <div class="logout-bg-glow"></div>
+
+    <!-- Animated Floating Emojis -->
+    <div class="floating-food f-1">🍕</div>
+    <div class="floating-food f-2">🍰</div>
+    <div class="floating-food f-3">🥗</div>
+    <div class="floating-food f-4">🍔</div>
+    <div class="floating-food f-5">🍜</div>
+    <div class="floating-food f-6">🥑</div>
+
+    <div class="logout-card">
+      <div class="logout-icon-ring">
+        <i class="fa-solid fa-right-from-bracket"></i>
+      </div>
+
+      <div class="logout-badge">
+        <i class="fa-solid fa-shield-check"></i> Session Closed
+      </div>
+
+      <h1 class="logout-title">You Have Logged Out</h1>
+      
+      <p class="logout-desc">
+        Thank you for spending time with <strong>FlavorBook</strong>! Your session has ended safely. Want to save new recipes or publish your custom culinary creations?
+      </p>
+
+      <div class="logout-actions">
+        <a href="login.html" class="logout-btn-login">
+          <i class="fa-solid fa-right-to-bracket"></i> Want to Log In Again?
+        </a>
+        <a href="index.html" class="logout-btn-guest">
+          <i class="fa-solid fa-house"></i> Return to Homepage
+        </a>
+      </div>
+
+      <div class="logout-quote">
+        "Good food is the foundation of genuine happiness." — Auguste Escoffier
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>&copy; 2026 FlavorBook. All Rights Reserved. Crafted for food lovers everywhere.</p>
+    </div>
+  </footer>
+
+  <div class="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/darkmode.js"></script>
+  <script src="js/search.js"></script>
+
+  <script>
+    // Ensure logged out state is set upon viewing logout page
+    localStorage.removeItem('isLoggedIn');
+  </script>
+</body>
+</html>
